@@ -167,6 +167,78 @@ main {
     color: #155724;
     /* Dark green text */
 }
+
+/* Course Filters */
+.course-filters {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    background-color: #009688;
+    /* Teal */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #00796b;
+}
+
+/* Course List Styling */
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.course {
+    background-color: #fff;
+    padding: 1rem;
+    border-left: 6px solid #009688;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.course h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #009688;
+}
+
+.course p {
+    margin: 0.3rem 0;
+    color: #333;
+}
+
+#total-credits {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+/* Optional: Visual cue for completed courses */
+.course.completed {
+    border-left-color: #4CAF50;
+    /* Green */
+    background-color: #f0fff0;
+}
+
+
 /* Footer */
 footer {
     background-color: #003366;
