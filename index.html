@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="This assignment demonstrates my prerequisite knowledge by applying HTML, CSS, and JavaScript to the design and development of my course home page." />
+    <meta name="author" content="Glenn Soriano" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <title>WDD 231 - Course Home Page</title>
+    <link rel="stylesheet" href="styles/chamber.css" />
 </head>
+
 <body>
-    <h1>WDD 231 - Glenn Soriano</h1>
+    <header class="page-header">
+        <div class="header-content">
+            <img src="images/glennsoriano.jpg" alt="Photo of Glenn Soriano" class="profile-pic" />
+            <div>
+                <h1>WDD 231: <span>Glenn D. Soriano</span></h1>
+                <p>Welcome to Web Frontend Development I</p>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="week02/index.html">Chamber</a></li>
+                <li><a href="week06/index.html">Final</a></li>
+                <li><a href="https://github.com/glenn-d-soriano" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-grid">            
+        <section class="card course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li><a href="week01/index.html">Week 1</a></li>
+                <li><a href="week02/index.html">Week 2</a></li>
+                <li><a href="week03/index.html">Week 3</a></li>
+                <li><a href="week04/index.html">Week 4</a></li>
+                <li><a href="week05/index.html">Week 5</a></li>
+                <li><a href="week06/index.html">Week 6</a></li>
+            </ul>
+        </section>
+
+        <section class="card location">
+            <h2>Winnipeg, Canada</h2>
+            <img src="images/canada-small1.webp" alt="Photo of Banff" class="Photo" />
+            <p>🇨🇦 Banff 🇨🇦.</p>
+        </section>
+    
+        <section class="card program">
+            <h2>Web and Computer Programming Certificate</h2>
+            <ul>
+                <li><a href="#">HTML & CSS Certificate</a></li>
+                <li><a href="#">JavaScript Certificate</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> 🇵🇭 Glenn Soriano - Philippines</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/chamber.js" defer></script>
 </body>
+
 </html>
