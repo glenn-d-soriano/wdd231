@@ -12,6 +12,8 @@ body {
     color: #333;
     line-height: 1.6;
     padding-bottom: 60px;
+    margin: 0 10px;
+    /* Ensure no text or elements touch the edge */
 }
 
 /* Header */
@@ -81,27 +83,38 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
     text-decoration: underline;
+    color: #FF5722;
+    /* Example hover color */
 }
 
-/* Assuming you have a class for the card image */
-.card-image {
-    width: 100%; /* Adjust to take full width of the card */
-    height: auto; /* Keep aspect ratio intact */
-    border-radius: 0; /* Remove the circular shape */
-}
-
-/* For the card container */
+/* Card Styles */
 .card {
-    /* Your existing styles */
-    overflow: hidden; /* Prevent image overflow if needed */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-/* Main */
+.card h2 {
+    color: #006699;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    /* Remove circular effect */
+}
+
+/* Main Grid Layout */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -111,39 +124,6 @@ main {
     padding: 0 15px;
 }
 
-.card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.card h2 {
-    color: #006699;
-    margin-bottom: 10px;
-}
-
-.card ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.card ul li a:hover {
-    color: #006699;
-}
-
-.course {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    background-color: #fff;
-}
-
-.course h3 {
-    color: #003366;
-    margin-bottom: 10px;
-}
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -168,6 +148,7 @@ main {
     grid-area: program;
     text-align: center;
 }
+
 @media (max-width: 768px) {
     .main-grid {
         grid-template-columns: 1fr;
@@ -176,6 +157,15 @@ main {
             "location"
             "program";
     }
+}
+
+.course.completed {
+    background-color: #d4edda;
+    /* Light green background for completed courses */
+    border: 2px solid #28a745;
+    /* Green border */
+    color: #155724;
+    /* Dark green text */
 }
 /* Footer */
 footer {

@@ -4,6 +4,14 @@ document.getElementById("current-year").textContent = new Date().getFullYear();
 // Last modified date
 document.getElementById("last-modified").textContent = document.lastModified;
 
+// JavaScript for responsive navigation toggle
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+});
+
 const courses = [
     {
         subject: 'CSE',
@@ -74,13 +82,59 @@ courses.forEach(course => {
     const section = document.createElement('section');
     section.classList.add('course');
 
+    if (course.completed) {
+        section.classList.add('completed');
+    }
+
     section.innerHTML = `
-    <h3>${course.subject} ${course.number} - ${course.title}</h3>
-    <p><strong>Credits:</strong> ${course.credits}</p>
-    <p><strong>Certificate:</strong> ${course.certificate}</p>
-    <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
-    <p>${course.description}</p>
-  `;
+        <h3>${course.subject} ${course.number} - ${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        <p>${course.description}</p>
+    `;
 
     container.appendChild(section);
 });
+
+const showAllBtn = document.getElementById('show-all');
+const showWddBtn = document.getElementById('show-wdd');
+const showCseBtn = document.getElementById('show-cse');
+
+showAllBtn.addEventListener('click', () => filterCourses('All'));
+showWddBtn.addEventListener('click', () => filterCourses('WDD'));
+showCseBtn.addEventListener('click', () => filterCourses('CSE'));
+
+function filterCourses(category) {
+    container.innerHTML = ''; // Clear current courses
+
+    const filteredCourses = category === 'All'
+        ? courses
+        : courses.filter(course => course.subject === category);
+
+    filteredCourses.forEach(course => {
+        const section = document.createElement('section');
+        section.classList.add('course');
+
+        if (course.completed) {
+            section.classList.add('completed');
+        }
+
+        section.innerHTML = `
+            <h3>${course.subject} ${course.number} - ${course.title}</h3>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+            <p>${course.description}</p>
+        `;
+
+        container.appendChild(section);
+    });
+
+    updateTotalCredits(filteredCourses);
+}
+
+function updateTotalCredits(coursesToDisplay) {
+    const totalCredits = coursesToDisplay.reduce((total, course) => total + course.credits, 0);
+    document.getElementById('total-credits').textContent = `Total Credits: ${totalCredits}`;
+}
