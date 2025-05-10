@@ -55,29 +55,27 @@
         </section>
     
         <section class="card-group">
-            <section class="card program">
+            <section class="card certificate">
                 <h2>Web and Computer Programming Certificate</h2>
-                <ul>
-                    <li><a href="#">HTML & CSS Certificate</a></li>
-                    <li><a href="#">JavaScript Certificate</a></li>
-                </ul>
+        
+                <section class="course-filters">
+                    <h3>Course Filter</h3>
+                    <div class="filter-buttons">
+                        <button id="show-all">All Courses</button>
+                        <button id="show-wdd">WDD Courses</button>
+                        <button id="show-cse">CSE Courses</button>
+                    </div>
+                </section>
+        
+                <section class="course-list">
+                    <h3>Certificate Courses</h3>
+                    <div id="courseContainer"></div>
+                    <p id="total-credits">Total Credits: 0</p>
+                </section>
             </section>
+        </section>
 
-            <section class="card course-filters">
-                <h2>Course Filter</h2>
-                <div class="filter-buttons">
-                    <button id="show-all">All Courses</button>
-                    <button id="show-wdd">WDD Courses</button>
-                    <button id="show-cse">CSE Courses</button>
-                </div>
-            </section>
-
-            <section class="card course-list">
-                <h2>Certificate Courses</h2>
-                <div id="courseContainer"></div>
-                <p id="total-credits">Total Credits: 0</p>
-            </section>
-        </section>    
+    
     </main>
 
     <footer>
