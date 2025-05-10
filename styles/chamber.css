@@ -147,6 +147,7 @@ main {
     padding: 0 15px;
 }
 
+
 .course-work {
     grid-area: course;
 }
@@ -255,7 +256,7 @@ main {
 }
 
 .course-btn.completed {
-    background-color: #4CAF50;
+    background-color: #000000;
     /* Green for completed */
 }
 .certificate-container {
