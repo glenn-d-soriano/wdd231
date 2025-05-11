@@ -12,7 +12,9 @@ body {
     color: #333;
     line-height: 1.6;
     padding-bottom: 60px;
-    margin: 0 10px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     /* Ensure no text or elements touch the edge */
 }
 
@@ -275,10 +277,9 @@ main {
 }
 #courseContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* responsive fix */
     gap: 20px;
-    /* spacing between grid items */
     margin-top: 1rem;
 }
 
@@ -321,4 +322,11 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+    
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+    
 }
