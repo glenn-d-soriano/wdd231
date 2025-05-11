@@ -7,9 +7,12 @@ document.getElementById("last-modified").textContent = document.lastModified;
 // Navigation toggle
 const menuToggle = document.getElementById('menu-toggle');
 const nav = document.querySelector('nav ul');
+
 menuToggle.addEventListener('click', () => {
+    console.log('Hamburger clicked!'); // Check if click event is fired
     nav.classList.toggle('show');
 });
+
 
 // Course data
 const courses = [

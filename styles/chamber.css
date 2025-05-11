@@ -59,7 +59,7 @@ header p {
     font-size: 2rem;
     background: none;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -77,7 +77,17 @@ nav ul {
     padding: 10px;
     flex-wrap: wrap;
 }
+/* Hide the navigation by default on mobile */
+nav ul {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+}
 
+nav ul.show {
+    display: flex;
+}
 nav ul li {
     margin: 0 15px;
 }
@@ -302,26 +312,46 @@ footer {
     font-size: 0.9rem;
 }
 
+nav ul {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+}
 /* Responsive Navigation */
 @media (max-width: 768px) {
     #menu-toggle {
         display: block;
+        /* Show hamburger icon on mobile */
     }
 
     nav ul {
         display: none;
+        /* Hide menu by default on mobile */
         flex-direction: column;
         padding: 1rem;
+        width: 100%;
+        /* Ensure it takes full width */
+        background-color: #006699;
+        /* Same background as nav */
+        position: absolute;
+        /* Position the menu below the header */
+        top: 4rem;
+        /* Adjust based on header height */
+        right: 0;
+        left: 0;
     }
 
     nav ul.show {
         display: flex;
+        /* Show menu when .show class is added */
     }
 
-    .header-content {
-        flex-direction: column;
-        text-align: center;
+    nav ul li {
+        margin: 10px 0;
+        /* Spacing between items */
     }
+}
     
 html,
 body {
@@ -329,4 +359,3 @@ body {
     overflow-x: hidden;
 }
     
-}
