@@ -73,19 +73,18 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 10px;
-    flex-wrap: wrap;
-    width: 100%;
-}
-/* Hide the navigation by default on mobile */
-nav ul {
     display: none;
     flex-direction: column;
     list-style: none;
     padding: 1rem;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #006699;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    left: 0;
 }
 
 nav ul.show {
@@ -316,12 +315,7 @@ footer {
     font-size: 0.9rem;
 }
 
-nav ul {
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    padding: 1rem;
-}
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
     #menu-toggle {
