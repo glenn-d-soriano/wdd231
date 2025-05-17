@@ -152,15 +152,15 @@ main {
 
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-areas:
         "course location"
         "program program";
     gap: 20px;
-    max-width: 960px;
+    max-width: 880px;
+    /* Slightly smaller than 960px, but larger than 800px */
     margin: 20px auto;
     padding: 0 15px;
-    max-width: 100%;
 }
 
 
@@ -315,6 +315,19 @@ footer {
     font-size: 0.9rem;
 }
 
+@media (min-width: 769px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
 
 /* Responsive Navigation */
 @media (max-width: 768px) {
@@ -324,21 +337,12 @@ footer {
     }
 
     nav ul {
-        display: none;
-        /* Hide menu by default on mobile */
-        flex-direction: column;
-        padding: 1rem;
-        width: 100%;
-        /* Ensure it takes full width */
-        background-color: #006699;
-        /* Same background as nav */
-        position: absolute;
-        /* Position the menu below the header */
-        top: 4rem;
-        /* Adjust based on header height */
-        right: 0;
-        left: 0;
-    }
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
 
     nav ul.show {
         display: flex;
