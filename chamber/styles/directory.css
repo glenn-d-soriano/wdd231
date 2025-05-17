@@ -138,6 +138,33 @@ h2 {
     margin-bottom: 1rem;
 }
 
+#directory.list-view .card img {
+    max-width: 100px;
+    margin-right: 1rem;
+}
+
+#directory.list-view .card {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#directory.list-view .card>* {
+    text-align: left;
+}   
+
+#directory img {
+    display: block;
+    /* or inline-block, depending on your layout */
+    max-width: 150px;
+    margin: 0 auto 1rem;
+    /* or whatever size fits your grid */
+    height: auto;
+}
+
+/* Hide images when directory has list-view class */
+#directory.list-view img {
+    display: none;
+}
 .card {
     background-color: white;
     border: 1px solid #ccc;
