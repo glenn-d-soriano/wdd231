@@ -23,11 +23,14 @@ a:hover {
 
 /* HEADER */
 header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
     background-color: #004d66;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -53,7 +56,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 1rem;
 }
 
@@ -165,20 +168,52 @@ h2 {
     margin: 0.3rem 0;
     font-size: 0.95rem;
 }
+.card a {
+    display: block;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    color: #006b8f;
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
 
 /* FOOTER */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
     background-color: #004d66;
     color: white;
-    padding: 2rem 1rem;
+    flex-wrap: nowrap;
+    justify-content:space-between   
+}
+
+footer .designer,
+footer .contact,
+footer .social-links {
+    flex-basis: 33.33%;
+}
+
+footer .designer {
+    text-align: left;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+
+footer .contact {
+    text-align: right;
 }
 
 footer a {
     color: #ffcc00;
 }
 
-footer .social a img {
+footer .social-links a img {
     width: 24px;
     margin: 0 5px;
 }
@@ -188,6 +223,24 @@ footer .footer-note {
     font-size: 0.9rem;
 }
 
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer section {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .designer,
+    .social-links,
+    .contact {
+        text-align: center !important;
+    }
+}
 /* DARK MODE */
 body.dark-mode {
     background-color: #222;

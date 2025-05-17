@@ -4,55 +4,62 @@
         "address": "1406 Ellice Ave, Winnipeg, MB R3G 0G4",
         "phone": "204-789-9824",
         "website": "https://www.jollibeefoods.com",
-        "image": "jollibee-logo.png",
-        "membership": 3
+        "image": "jollibee.jpg",
+        "membership": 3,
+        "info": "A popular Filipino fast-food chain known for its fried chicken and spaghetti."
     },
     {
         "name": "Winnipeg Free Press",
         "address": "1355 Mountain Ave, Winnipeg, MB R2X 3B6",
         "phone": "204-697-7000",
         "website": "https://www.winnipegfreepress.com",
-        "image": "wfp-logo.png",
-        "membership": 2
+        "image": "winnipegfreepress.jpg",
+        "membership": 2,
+        "info": "A leading newspaper serving Winnipeg with local, national, and international news."
     },
     {
         "name": "Red River College",
         "address": "2055 Notre Dame Ave, Winnipeg, MB R3H 0J9",
         "phone": "204-632-3960",
         "website": "https://www.rrc.ca",
-        "image": "rrc-logo.png",
-        "membership": 3
+        "image": "redriver.jpg",
+        "membership": 3,
+        "info": "One of Manitoba's largest institutes of applied learning and research."
     },
     {
         "name": "Forks Market",
         "address": "1 Forks Market Rd, Winnipeg, MB R3C 4L8",
         "phone": "204-942-6302",
         "website": "https://www.theforks.com",
-        "image": "forks-logo.png",
-        "membership": 1
+        "image": "forksmarket.jpg",
+        "membership": 1,
+        "info": "A historical and cultural meeting place with shops, restaurants, and events."
     },
     {
         "name": "Canada Life",
         "address": "100 Osborne St N, Winnipeg, MB R3C 3A5",
         "phone": "204-946-1190",
         "website": "https://www.canadalife.com",
-        "image": "canada-life-logo.png",
-        "membership": 3
+        "image": "canadalife.jpg",
+        "membership": 3,
+        "info": "A Canadian insurance and financial services company providing life insurance, health insurance, and more."
     },
     {
-        "name": "City of Winnipeg",
-        "address": "510 Main St, Winnipeg, MB R3B 1B9",
-        "phone": "311",
-        "website": "https://www.winnipeg.ca",
-        "image": "winnipeg-logo.png",
-        "membership": 2
+        "name": "St. Boniface Hospital",
+        "address": "409 Taché Ave, Winnipeg, MB R2H 2A6",
+        "phone": "(204) 233-8563",
+        "website": "https://www.sbgh.mb.ca",
+        "image": "stbonifacehospital.jpg",
+        "membership": 2,
+        "info": "A leading healthcare facility in Manitoba known for compassionate care, medical research, and specialized treatment."
     },
     {
         "name": "True North Sports + Entertainment",
         "address": "300 Portage Ave, Winnipeg, MB R3C 5S4",
         "phone": "204-987-7825",
         "website": "https://www.truenorth.square.site",
-        "image": "truenorth-logo.png",
-        "membership": 2
+        "image": "truenorthsports.jpg",
+        "membership": 2,
+        "info": "Owner of the Winnipeg Jets and manager of Canada Life Centre, promoting sports and entertainment."
     }
 ]

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Dark Mode Toggle
-    const darkModeToggle = document.getElementById("darkModeToggle");
+    const darkModeToggle = document.getElementById("mode-toggle");
     if (darkModeToggle) {
         darkModeToggle.addEventListener("click", () => {
             document.body.classList.toggle("dark-mode");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("data/members.json")
         .then(response => response.json())
         .then(data => {
-            displayBusinesses(data); // ✅ NOT data.businesses
+            displayBusinesses(data);
         })
         .catch(error => console.error("Error loading business data:", error));
 });
@@ -55,30 +55,47 @@ function displayBusinesses(businesses) {
         const card = document.createElement("section");
         card.classList.add("card");
 
+        // Name
+        const name = document.createElement("h3");
+        name.textContent = biz.name;
+
+        // Address
+        const address = document.createElement("p");
+        address.textContent = `Address: ${biz.address}`;
+
+        // Phone
+        const phone = document.createElement("p");
+        phone.textContent = `Phone: ${biz.phone}`;
+
+        // Website
+        const website = document.createElement("a");
+        website.href = biz.website;
+        website.target = "_blank";
+        website.textContent = biz.website;
+
+        // Image
         const logo = document.createElement("img");
         logo.src = `images/${biz.image}`;
         logo.alt = `Logo of ${biz.name}`;
         logo.loading = "lazy";
 
-        const name = document.createElement("h3");
-        name.textContent = biz.name;
+        // Membership
+        const membership = document.createElement("p");
+        const membershipLevels = { 1: "Member", 2: "Silver", 3: "Gold" };
+        membership.textContent = `Membership Level: ${membershipLevels[biz.membership] || "Unknown"}`;
 
-        const address = document.createElement("p");
-        address.textContent = biz.address;
+        // Info
+        const info = document.createElement("p");
+        info.textContent = biz.info;
 
-        const phone = document.createElement("p");
-        phone.textContent = biz.phone;
-
-        const website = document.createElement("a");
-        website.href = biz.website;
-        website.target = "_blank";
-        website.textContent = "Visit Website";
-
-        card.appendChild(logo);
+        // Append in desired order
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
+        card.appendChild(logo);
+        card.appendChild(membership);
+        card.appendChild(info);
 
         directory.appendChild(card);
     });
