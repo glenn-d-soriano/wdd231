@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Winnipeg Chamber of Commerce business directory page.">
+    <meta name="author" content="Glenn Soriano">
+    <meta property="og:title" content="Winnipeg Chamber of Commerce">
+    <meta property="og:description" content="Discover local businesses, events, and services in Winnipeg.">
+    <meta property="og:image" content="https://glenn-d-soriano.github.io/wdd231/images/glennsoriano.jpg">
+    <meta property="og:url" content="https://glenn-d-soriano.github.io/wdd231/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:site_name" content="WDD 231 - Glenn Soriano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/directory.css">
+    <title>Directory | Winnipeg Chamber of Commerce</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/winnipeglogo.jpg" alt="Winnipeg Chamber of Commerce Logo" />
+            <h1>Winnipeg <span>Chamber of Commerce</span></h1>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-label="Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><button id="mode-toggle" aria-label="Toggle dark mode">🌓</button></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Hero Image" class="responsive-hero">
+            <a href="#" class="cta-button">Keynote Tickets</a>
+        </section>
+
+        <section class="home-section">
+            <h2>Home</h2>
+            <div class="info-grid">
+                <div class="card events">
+                    <h3>Events</h3>
+                    <p>Upcoming business networking events and workshops.</p>
+                </div>
+                <div class="card weather">
+                    <h3>Current Weather</h3>
+                    <p><strong>75°F</strong><br>Partly Cloudy<br>High: 85°<br>Low: 52°<br>Humidity: 34%<br>Sunrise:
+                        7:30am<br>Sunset: 9:59pm</p>
+                </div>
+                <div class="card forecast">
+                    <h3>Weather Forecast</h3>
+                    <p>Today: <strong>90°F</strong><br>Wednesday: <strong>89°F</strong><br>Thursday:
+                        <strong>68°F</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="directory">
+            <div class="business-card">
+                <img src="images/business1.jpg" alt="Business 1 logo">
+                <h4>Business Name</h4>
+                <p>Business Tag Line</p>
+                <p><strong>Email:</strong> info@gmail.com</p>
+                <p><strong>Phone:</strong> 800-555-1234</p>
+                <p><strong>URL:</strong> mybusiness.com</p>
+            </div>
+            <div class="business-card">
+                <img src="images/business2.jpg" alt="Business 2 logo">
+                <h4>Business Name</h4>
+                <p>Business Tag Line</p>
+                <p><strong>Email:</strong> info@gmail.com</p>
+                <p><strong>Phone:</strong> 800-555-1234</p>
+                <p><strong>URL:</strong> mybusiness.com</p>
+            </div>
+            <div class="business-card">
+                <img src="images/business3.jpg" alt="Business 3 logo">
+                <h4>Business Name</h4>
+                <p>Business Tag Line</p>
+                <p><strong>Email:</strong> info@gmail.com</p>
+                <p><strong>Phone:</strong> 800-555-1234</p>
+                <p><strong>URL:</strong> mybusiness.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact">
+            <p><strong>Winnipeg Chamber of Commerce</strong></p>
+            <p>111 Main St. Winnipeg, MB R2J2J3</p>
+            <p>Email: <a href="mailto:info@timbuktucc.org">info@winnipegchamber.org</a></p>
+            <p>Phone: (204) 123-1234</p>
+        </section>
+        <section class="social">
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube" /></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+            <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+        </section>
+
+        <section class="designer">
+            <p>WDD231 Class Project </p>
+            <p>🇵🇭 Glenn Soriano 🇵🇭</p>
+            <p>&copy; <span id="current-year"></span> Winnipeg Chamber of Commerce</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </section>
+
+    </footer>
+
+    <script src="scripts/directory.js" defer></script>
+</body>
+
+</html>

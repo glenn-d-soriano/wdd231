@@ -1,0 +1,238 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #006b8f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    background-color: #004d66;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.logo span {
+    font-weight: 300;
+    display: block;
+    font-size: 1rem;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#menuBtn {
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    display: none;
+}
+
+#navMenu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+#navMenu li a {
+    color: white;
+    font-weight: bold;
+}
+
+#darkModeToggle {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #004d66;
+}
+
+/* DIRECTORY CONTROLS */
+.directory-controls {
+    margin-bottom: 1rem;
+}
+
+.directory-controls button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid #004d66;
+    background-color: #fff;
+    color: #004d66;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.directory-controls button.active,
+.directory-controls button:hover {
+    background-color: #004d66;
+    color: #fff;
+}
+
+/* DIRECTORY SECTION */
+#directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+#directory.list-view {
+    display: block;
+}
+
+#directory.list-view .card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #004d66;
+}
+
+.card p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #004d66;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #ffcc00;
+}
+
+footer .social a img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+footer .footer-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #111;
+}
+
+body.dark-mode .card {
+    background-color: #333;
+    border-color: #444;
+}
+
+body.dark-mode .directory-controls button {
+    border-color: #ddd;
+    color: #ddd;
+    background-color: #222;
+}
+
+body.dark-mode .directory-controls button.active {
+    background-color: #ddd;
+    color: #222;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    #menuBtn {
+        display: block;
+    }
+
+    #navMenu {
+        flex-direction: column;
+        display: none;
+        margin-top: 1rem;
+    }
+
+    #navMenu.open {
+        display: flex;
+    }
+
+    #directory.list-view .card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

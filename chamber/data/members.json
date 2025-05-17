@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Jollibee Restaurant",
+        "address": "1406 Ellice Ave, Winnipeg, MB R3G 0G4",
+        "phone": "204-789-9824",
+        "website": "https://www.jollibeefoods.com",
+        "image": "jollibee-logo.png",
+        "membership": 3
+    },
+    {
+        "name": "Winnipeg Free Press",
+        "address": "1355 Mountain Ave, Winnipeg, MB R2X 3B6",
+        "phone": "204-697-7000",
+        "website": "https://www.winnipegfreepress.com",
+        "image": "wfp-logo.png",
+        "membership": 2
+    },
+    {
+        "name": "Red River College",
+        "address": "2055 Notre Dame Ave, Winnipeg, MB R3H 0J9",
+        "phone": "204-632-3960",
+        "website": "https://www.rrc.ca",
+        "image": "rrc-logo.png",
+        "membership": 3
+    },
+    {
+        "name": "Forks Market",
+        "address": "1 Forks Market Rd, Winnipeg, MB R3C 4L8",
+        "phone": "204-942-6302",
+        "website": "https://www.theforks.com",
+        "image": "forks-logo.png",
+        "membership": 1
+    },
+    {
+        "name": "Canada Life",
+        "address": "100 Osborne St N, Winnipeg, MB R3C 3A5",
+        "phone": "204-946-1190",
+        "website": "https://www.canadalife.com",
+        "image": "canada-life-logo.png",
+        "membership": 3
+    },
+    {
+        "name": "City of Winnipeg",
+        "address": "510 Main St, Winnipeg, MB R3B 1B9",
+        "phone": "311",
+        "website": "https://www.winnipeg.ca",
+        "image": "winnipeg-logo.png",
+        "membership": 2
+    },
+    {
+        "name": "True North Sports + Entertainment",
+        "address": "300 Portage Ave, Winnipeg, MB R3C 5S4",
+        "phone": "204-987-7825",
+        "website": "https://www.truenorth.square.site",
+        "image": "truenorth-logo.png",
+        "membership": 2
+    }
+]
