@@ -87,6 +87,50 @@ nav {
     cursor: pointer;
 }
 
+/* Hide nav menu by default on small screens */
+@media (max-width: 768px) {
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        background-color: #009688;
+        /* or your nav background */
+        position: absolute;
+        top: 60px;
+        /* adjust to header height */
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem 0;
+    }
+
+    /* Show nav menu when open class is toggled */
+    #navMenu.open {
+        display: flex;
+    }
+
+    #navMenu li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    #navMenu li a,
+    #navMenu li button {
+        color: #fff;
+        font-size: 1.2rem;
+        display: block;
+        padding: 0.5rem 0;
+        text-decoration: none;
+    }
+
+    /* Style hamburger button */
+    #menuBtn {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #009688;
+        cursor: pointer;
+    }
+}
 /* MAIN */
 main {
     padding: 2rem;
