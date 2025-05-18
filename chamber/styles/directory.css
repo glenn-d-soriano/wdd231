@@ -14,6 +14,7 @@ body {
 
 a {
     color: #006b8f;
+    /* Good contrast on white */
     text-decoration: none;
 }
 
@@ -31,6 +32,7 @@ header {
     padding: 1rem 2rem;
     gap: 1rem;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -89,21 +91,32 @@ nav {
 
 /* Hide nav menu by default on small screens */
 @media (max-width: 768px) {
+
+    /* Hamburger menu button */
+    #menuBtn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #009688;
+        cursor: pointer;
+    }
+
+    /* Navigation menu styles */
     #navMenu {
         display: none;
         flex-direction: column;
         background-color: #009688;
-        /* or your nav background */
         position: absolute;
         top: 60px;
-        /* adjust to header height */
+        /* Adjust to header height */
         right: 0;
         width: 100%;
         z-index: 1000;
         padding: 1rem 0;
+        margin-top: 1rem;
     }
 
-    /* Show nav menu when open class is toggled */
     #navMenu.open {
         display: flex;
     }
@@ -122,15 +135,13 @@ nav {
         text-decoration: none;
     }
 
-    /* Style hamburger button */
-    #menuBtn {
-        background: none;
-        border: none;
-        font-size: 2rem;
-        color: #009688;
-        cursor: pointer;
+    /* Directory view layout on small screens */
+    #directory.list-view .card {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
+
 /* MAIN */
 main {
     padding: 2rem;
@@ -187,21 +198,20 @@ h2 {
     margin-right: 1rem;
 }
 
-#directory.list-view .card {
+/* Removed duplicate flex styles for list-view cards */
+/* #directory.list-view .card {
     flex-direction: row;
     gap: 1rem;
-}
+} */
 
 #directory.list-view .card>* {
     text-align: left;
-}   
+}
 
 #directory img {
     display: block;
-    /* or inline-block, depending on your layout */
     max-width: 150px;
     margin: 0 auto 1rem;
-    /* or whatever size fits your grid */
     height: auto;
 }
 
@@ -209,7 +219,6 @@ h2 {
 #directory.list-view img {
     display: none;
 }
-
 
 .card {
     background-color: white;
@@ -241,6 +250,7 @@ h2 {
     margin: 0.3rem 0;
     font-size: 0.95rem;
 }
+
 .card a {
     display: block;
     word-break: break-word;
@@ -250,17 +260,16 @@ h2 {
     font-size: 0.95rem;
 }
 
+/* MOBILE LIST VIEW */
 @media (max-width: 600px) {
     #directory.list-view .card {
         display: block;
-        /* Remove grid */
         padding: 1rem;
         border-bottom: 1px solid #ccc;
     }
 
     #directory.list-view .card img {
         display: none;
-        /* Keep image hidden */
     }
 
     #directory.list-view .card>* {
@@ -277,6 +286,7 @@ h2 {
         margin-bottom: 0.5rem;
     }
 }
+
 /* FOOTER */
 footer {
     display: flex;
@@ -286,7 +296,7 @@ footer {
     background-color: #004d66;
     color: white;
     flex-wrap: nowrap;
-    justify-content:space-between   
+    justify-content: space-between;
 }
 
 footer .designer,
@@ -323,7 +333,7 @@ footer .footer-note {
     font-size: 0.9rem;
 }
 
-
+/* FOOTER MOBILE */
 @media (max-width: 600px) {
     footer {
         flex-direction: column;
@@ -341,6 +351,7 @@ footer .footer-note {
         text-align: center !important;
     }
 }
+
 /* DARK MODE */
 body.dark-mode {
     background-color: #222;
@@ -366,26 +377,4 @@ body.dark-mode .directory-controls button {
 body.dark-mode .directory-controls button.active {
     background-color: #ddd;
     color: #222;
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 768px) {
-    #menuBtn {
-        display: block;
-    }
-
-    #navMenu {
-        flex-direction: column;
-        display: none;
-        margin-top: 1rem;
-    }
-
-    #navMenu.open {
-        display: flex;
-    }
-
-    #directory.list-view .card {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 }
