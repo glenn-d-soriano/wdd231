@@ -19,14 +19,13 @@
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/directory.css">
     <title>Directory | Winnipeg Chamber of Commerce</title>
-    
-</head> 
+</head>
 
 <body>
     <header>
         <div class="logo">
             <img src="images/winnipeglogo.jpg" alt="Winnipeg Chamber of Commerce Logo" />
-            <h1>Winnipeg <span>Chamber of Commerce</span></h1>
+            <div class="logo-text">Winnipeg <span>Chamber of Commerce</span></div>
         </div>
         <nav>
             <button id="menuBtn" aria-label="Menu">☰</button>
@@ -37,18 +36,16 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><button id="mode-toggle" aria-label="Toggle dark mode">🌓</button></li>
             </ul>
-            
         </nav>
-    </header>   
+    </header>
 
     <main>
+        <h1>Winnipeg Chamber of Commerce</h1>
         <h2>Business Directory</h2>
         <button id="gridBtn" class="active">Grid View</button>
         <button id="listBtn">List View</button>
         <section id="directory" class="grid-view"></section>
     </main>
-     
-       
 
     <footer>
         <section class="contact">
@@ -64,18 +61,17 @@
             <a href="https://twitter.com" title="Twitter">
                 <img src="images/twitter.png" alt="Twitter Logo">
             </a>
-            <a href="https://linken.com" title="Linkedin">
-                <img src="images/linkedIn.png" alt="Linkedin Logo">
+            <a href="https://linkedin.com" title="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn Logo">
             </a>
         </section>
-        
+
         <section class="designer">
-            <p>WDD231 Class Project </p>
+            <p>WDD231 Class Project</p>
             <p>🇵🇭 Glenn Soriano 🇵🇭</p>
             <p>&copy; <span id="current-year"></span> Winnipeg Chamber of Commerce</p>
-            <p>Last Modified: <span id="last-modified"></span></p>  
+            <p>Last Modified: <span id="last-modified"></span></p>
         </section>
-        
     </footer>
 
     <script src="scripts/directory.js" defer></script>

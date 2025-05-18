@@ -278,6 +278,39 @@ h2 {
     font-size: 0.95rem;
 }
 
+/* Show nav menu on desktop */
+@media (min-width: 769px) {
+    #navMenu {
+        position: static;
+        /* remove absolute positioning */
+        max-height: none !important;
+        /* override mobile hiding */
+        opacity: 1 !important;
+        overflow: visible;
+        display: flex !important;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    #navMenu li {
+        margin-left: 1.5rem;
+    }
+
+    #navMenu li a,
+    #navMenu li button {
+        color: white;
+        font-size: 1rem;
+        padding: 0;
+        display: inline-block;
+    }
+
+    /* Hide hamburger button on desktop */
+    #menuBtn {
+        display: none;
+    }
+}
 /* MOBILE LIST VIEW */
 @media (max-width: 600px) {
     #directory.list-view .card {
