@@ -116,23 +116,28 @@ nav {
     }
 
     /* Navigation menu styles */
-    #navMenu {
-        display: none;
-        flex-direction: column;
-        background-color: #009688;
-        position: absolute;
-        top: 60px;
-        /* Adjust to header height */
-        right: 0;
-        width: 100%;
-        z-index: 1000;
-        padding: 1rem 0;
-        margin-top: 1rem;
-    }
+ #navMenu {
+     max-height: 0;
+     opacity: 0;
+     overflow: hidden;
+     transition: max-height 0.7s ease, opacity 0.7s ease;
+     flex-direction: column;
+     background-color: #009688;
+     position: absolute;
+     top: 60px;
+     /* adjust if needed */
+     right: 0;
+     width: 100%;
+     z-index: 1000;
+     padding: 1rem 0;
+     margin-top: 1rem;
+ }
 
-    #navMenu.open {
-        display: flex;
-    }
+ #navMenu.open {
+     max-height: 500px;
+     /* or a value tall enough for menu */
+     opacity: 1;
+ }
 
     #navMenu li {
         margin: 0.5rem 0;
