@@ -96,7 +96,7 @@ nav {
 
 #darkModeToggle {
     background: none;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
