@@ -64,7 +64,7 @@ nav {
 
 #menuBtn {
     background: none;
-    color: white;
+    color: rgb(14, 6, 6);
     font-size: 1.5rem;
     border: none;
     display: none;
@@ -111,7 +111,7 @@ nav {
         background: none;
         border: none;
         font-size: 2rem;
-        color: #009688;
+        color: #ecfefc;
         cursor: pointer;
     }
 
@@ -448,8 +448,8 @@ body.dark-mode .directory-controls button.active {
 }
 
 nav ul li a.active {
-    background-color: #fff;
-    color: #009688;
+    background-color: #140a0a;
+    color: #2b6c65;
     padding: 0.4rem 0.8rem;
     border-radius: 5px;
 }
