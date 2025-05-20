@@ -79,6 +79,11 @@ function displayBusinesses(businesses) {
         logo.alt = `Logo of ${biz.name}`;
         logo.loading = "lazy";
 
+        // If the image fails to load, show a default placeholder
+        logo.onerror = () => {
+            logo.src = 'images/default-logo.png';
+        };
+
         // Membership
         const membership = document.createElement("p");
         const membershipLevels = { 1: "Member", 2: "Silver", 3: "Gold" };
