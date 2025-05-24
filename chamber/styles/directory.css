@@ -168,6 +168,30 @@ main {
     padding: 2rem;
 }
 
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.join-btn {
+    background-color: #009688;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
 h2 {
     margin-bottom: 1rem;
     color: #004d66;

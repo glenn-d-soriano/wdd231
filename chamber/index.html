@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,9 +55,11 @@
                 </div>
                 <div class="card weather">
                     <h3>Current Weather</h3>
-                    <p><strong>75°F</strong><br>Partly Cloudy<br>High: 85°<br>Low: 52°<br>Humidity: 34%<br>Sunrise:
-                        7:30am<br>Sunset: 9:59pm</p>
-                </div>
+                    <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="Weather icon">
+                        <figcaption></figcaption>
+                    </figure>            </div>
                 <div class="card forecast">
                     <h3>Weather Forecast</h3>
                     <p>Today: <strong>90°F</strong><br>Wednesday: <strong>89°F</strong><br>Thursday:
@@ -103,10 +104,16 @@
             <p>Email: <a href="mailto:info@timbuktucc.org">info@winnipegchamber.org</a></p>
             <p>Phone: (204) 123-1234</p>
         </section>
-        <section class="social">
-            <a href="#"><img src="images/youtube-icon.png" alt="YouTube" /></a>
-            <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
-            <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+        <section class="sociallinks" aria-label="Social Media Links">
+            <a href="https://youtube.com" title="YouTube">
+                <img src="images/youtube.png" alt="YouTube Logo">
+            </a>
+            <a href="https://twitter.com" title="Twitter">
+                <img src="images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://linkedin.com" title="LinkedIn">
+                <img src="images/linkedIn.png" alt="LinkedIn Logo">
+            </a>
         </section>
 
         <section class="designer">
@@ -118,7 +125,7 @@
 
     </footer>
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </body>
 
 </html>
