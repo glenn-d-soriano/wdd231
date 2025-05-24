@@ -42,58 +42,46 @@
 
     <main>
         <section class="hero">
-            <img src="images/hero.jpg" alt="Hero Image" class="responsive-hero">
-            <a href="#" class="cta-button">Keynote Tickets</a>
-        </section>
-
-        <section class="home-section">
-            <h2>Home</h2>
-            <div class="info-grid">
-                <div class="card events">
-                    <h3>Events</h3>
-                    <p>Upcoming business networking events and workshops.</p>
-                </div>
-                <div class="card weather">
-                    <h3>Current Weather</h3>
-                    <p><span id="current-temp"></span></p>
-                    <figure>
-                        <img id="weather-icon" src="" alt="Weather icon">
-                        <figcaption></figcaption>
-                    </figure>            </div>
-                <div class="card forecast">
-                    <h3>Weather Forecast</h3>
-                    <p>Today: <strong>90°F</strong><br>Wednesday: <strong>89°F</strong><br>Thursday:
-                        <strong>68°F</strong>
-                    </p>
-                </div>
+            <img src="images/hero.jpg" alt="City of Winnipeg" loading="lazy" />
+            <div class="cta">
+                <h1>Grow With Us!</h1>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
             </div>
         </section>
 
-        <section class="directory">
-            <div class="business-card">
-                <img src="images/business1.jpg" alt="Business 1 logo">
-                <h4>Business Name</h4>
-                <p>Business Tag Line</p>
-                <p><strong>Email:</strong> info@gmail.com</p>
-                <p><strong>Phone:</strong> 800-555-1234</p>
-                <p><strong>URL:</strong> mybusiness.com</p>
+        <!-- Events Section -->
+        <section class="events card">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Business Networking Breakfast – May 30, 2025</li>
+                <li>Chamber Gala – June 15, 2025</li>
+            </ul>
+        </section>
+        
+        <!-- Weather Section -->
+        <section class="weather card" id="weather-section">
+            <h2>Current Weather</h2>
+            <div class="weather-current">
+                <p id="current-temp"></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather icon" />
+                    <figcaption id="weather-desc"></figcaption>
+                </figure>
             </div>
-            <div class="business-card">
-                <img src="images/business2.jpg" alt="Business 2 logo">
-                <h4>Business Name</h4>
-                <p>Business Tag Line</p>
-                <p><strong>Email:</strong> info@gmail.com</p>
-                <p><strong>Phone:</strong> 800-555-1234</p>
-                <p><strong>URL:</strong> mybusiness.com</p>
+        </section>
+        
+        <!-- 3-Day Forecast Section -->
+        <section class="forecast card">
+            <h2>3-Day Forecast</h2>
+            <div id="forecast-cards" class="forecast-container">
+                <!-- JS will inject forecast cards here -->
             </div>
-            <div class="business-card">
-                <img src="images/business3.jpg" alt="Business 3 logo">
-                <h4>Business Name</h4>
-                <p>Business Tag Line</p>
-                <p><strong>Email:</strong> info@gmail.com</p>
-                <p><strong>Phone:</strong> 800-555-1234</p>
-                <p><strong>URL:</strong> mybusiness.com</p>
-            </div>
+        </section>
+        
+        <!-- Member Spotlights -->
+        <section class="spotlights card" id="spotlights">
+            <h2>Member Spotlights</h2>
+            <!-- JS will inject spotlight member cards here -->
         </section>
     </main>
 
@@ -126,6 +114,7 @@
     </footer>
 
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </body>
 
 </html>

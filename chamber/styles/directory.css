@@ -180,10 +180,13 @@ main {
 
 .cta {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-}
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px; }
 
 .join-btn {
     background-color: #009688;
@@ -192,11 +195,38 @@ main {
     text-decoration: none;
     border-radius: 6px;
 }
+
+.spotlight-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .spotlights {
+        display: flex;
+        justify-content: space-around;
+    } }
+
 h2 {
     margin-bottom: 1rem;
     color: #004d66;
 }
 
+.forecast-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    background: #e0f7fa;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center; }
 /* DIRECTORY CONTROLS */
 .directory-controls {
     margin-bottom: 1rem;
