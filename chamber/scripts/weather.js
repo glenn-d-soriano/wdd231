@@ -2,6 +2,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const weatherDetails = document.querySelector('#weather-details'); // ✅ Fix
 
 // URLs
 const currentWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=49.8951&lon=-97.1384&units=metric&appid=f6b9b7107d9d8bf0a30396ca5aa27cf5';
@@ -31,6 +32,23 @@ function displayCurrentWeather(data) {
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
+
+    const high = data.main.temp_max.toFixed(1);
+    const low = data.main.temp_min.toFixed(1);
+    const humidity = data.main.humidity;
+
+    const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+    if (weatherDetails) {
+        weatherDetails.innerHTML = `
+            <p><strong>High:</strong> ${high}&deg;C</p>
+            <p><strong>Low:</strong> ${low}&deg;C</p>
+            <p><strong>Humidity:</strong> ${humidity}%</p>
+            <p><strong>Sunrise:</strong> ${sunrise}</p>
+            <p><strong>Sunset:</strong> ${sunset}</p>
+        `;
+    }
 }
 
 // Fetch and display 3-day forecast
