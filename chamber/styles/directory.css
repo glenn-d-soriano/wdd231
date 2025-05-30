@@ -8,15 +8,17 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 a {
-    color: #161515;
+    color: #ff5601;
     /* Good contrast on white */
     text-decoration: none;
 }
@@ -212,18 +214,27 @@ main {
     border-radius: 6px;
 }
 
-.spotlight-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 1rem;
-    text-align: center;
+.spotlight-card img {
+    max-width: 100%    ;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
+
 
 @media (min-width: 768px) {
     .spotlights {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media (min-width: 768px) {
+    .spotlight-card img {
+        max-width: 50%;
+        height: auto;
+        object-fit: contain;
     }
 }
 
@@ -293,7 +304,7 @@ main {
 
 #directory img {
     display: block;
-    max-width: 150px;
+    max-width: 100%;
     margin: 0 auto 1rem;
     height: auto;
 }
@@ -308,6 +319,7 @@ main {
     padding: 1rem;
     text-align: center;
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -399,6 +411,10 @@ main {
     }
 }
 
+.spotlights {
+    display: block;
+}
+
 /* FOOTER */
 footer {
     display: flex;
@@ -408,7 +424,7 @@ footer {
     background-color: #004d66;
     color: white;
     flex-wrap: nowrap;
-    width: 100vw;
+    width: 100%;
     margin: 0;
 }
 
