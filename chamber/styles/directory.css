@@ -18,7 +18,7 @@ html, body {
 }
 
 a {
-    color: #0086f4;
+    color: #0800ff;
     /* Good contrast on white */
     text-decoration: none;
 }
@@ -29,10 +29,19 @@ a:hover {
 
 /* HEADING STYLES */
 h1 {
-    font-size: 2.5rem;
     color: #aaa7bb;
-    margin-bottom: 1rem;
 }
+
+/* Directory page h1 color override */
+.directory-page h1 {
+    color: #004d66;
+    /* Example: teal/dark blue */
+}
+
+/* Index page h1 color override */
+.index-page h1 {
+    color: #ffffff;
+    /* Example: a different blue */ }
 
 h2 {
     font-size: 2rem;
@@ -195,6 +204,40 @@ main {
     object-fit: cover;
 }
 
+/* Stand-alone .cta-button with fixed colors */
+/* Contrast issue fixed, accessible wayfinding focus */
+
+a.cta-button {
+    display: inline-block;
+    background-color: #007acc;
+    /* Strong blue background */
+    color: #ffffff;
+    /* White text */
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+a.cta-button:hover,
+a.cta-button:focus {
+    background-color: #005f99;
+    /* Darker blue hover/focus */
+    border-color: #ffd600;
+    /* Bright yellow border for focus */
+    outline: none;
+    color: #ffffff;
+}
+
+a.cta-button:focus-visible {
+    outline-offset: 3px;
+    outline: 3px solid #ffd600;
+    /* Yellow visible focus ring */
+}
 .cta {
     position: absolute;
     top: 50%;
