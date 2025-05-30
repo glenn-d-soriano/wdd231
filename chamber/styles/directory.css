@@ -258,8 +258,8 @@ a.cta-button:focus-visible {
 }
 
 .spotlight-card img {
-    width: 400px;       /* fixed width */
-    height: 400px;      /* fixed height */
+    width: 350px;       /* fixed width */
+    height: 350px;      /* fixed height */
     object-fit: cover;  /* fills container, cropping if needed */
     border-radius: 8px; /* optional rounded corners */
     display: block;
