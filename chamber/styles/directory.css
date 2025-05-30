@@ -18,7 +18,7 @@ html, body {
 }
 
 a {
-    color: #ff5601;
+    color: #0086f4;
     /* Good contrast on white */
     text-decoration: none;
 }
@@ -215,11 +215,12 @@ main {
 }
 
 .spotlight-card img {
-    max-width: 100%    ;
-    height: auto;
+    width: 400px;       /* fixed width */
+    height: 400px;      /* fixed height */
+    object-fit: cover;  /* fills container, cropping if needed */
+    border-radius: 8px; /* optional rounded corners */
     display: block;
-    margin: 0 auto;
-    border-radius: 8px;
+    margin: 0 auto;     /* center horizontally */
 }
 
 
