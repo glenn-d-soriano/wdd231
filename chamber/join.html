@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Winnipeg Chamber of Commerce business directory page.">
+    <meta name="author" content="Glenn Soriano">
+    <meta property="og:title" content="Winnipeg Chamber of Commerce">
+    <meta property="og:description" content="Discover local businesses, events, and services in Winnipeg.">
+    <meta property="og:image" content="https://glenn-d-soriano.github.io/wdd231/chamber/images/winnipeglogo.jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="https://glenn-d-soriano.github.io/wdd231/chamber/join  .html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:site_name" content="WDD 231 - Glenn Soriano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/directory.css">
+    <title>Directory | Winnipeg Chamber of Commerce</title>
+
+</head>
+
+<body class="join-page">
+    <header>
+        <div class="logo">
+            <img src="images/winnipeglogo.jpg" alt="Winnipeg Chamber of Commerce Logo" />
+            <div class="logo-text">Winnipeg <span>Chamber of Commerce</span></div>
+        </div>
+        <nav>
+            <button id="menuBtn" aria-label="Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active" id="menu-home">Home</a></li>
+                <li><a href="directory.html" id="menu-directory">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><button id="mode-toggle" aria-label="Toggle dark mode">🌓</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join Us Today!</h1>
+        <div class="content-grid">
+            <form method="get" action="thankyou.html" id="join-form">
+                <h2>Membership Application Form</h2>
+    
+                <label for="form-fn" title="Applicant's First Name">
+                    First Name:
+                    <input type="text" id="form-fn" name="fn" autocomplete="given-name" required />
+                </label>
+    
+                <label for="form-ln" title="Applicant's Last Name">
+                    Last Name:
+                    <input type="text" id="form-ln" name="ln" autocomplete="family-name" required />
+                </label>
+    
+                <label for="form-jt" title="Applicant's Organizational Title (7+ chars, letters, hyphens, spaces)">
+                    Job Title:
+                    <input type="text" id="form-jt" name="jt" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$"
+                        title="Please enter at least 7 characters: letters, spaces, or hyphens only." />
+                </label>
+    
+                <label for="form-email" title="Applicant's Email Address">
+                    Email:
+                    <input type="email" id="form-email" name="email" autocomplete="email" placeholder="example@gmail.com"
+                        required />
+                </label>
+    
+                <label for="form-phone" title="Applicant's Mobile Phone Number">
+                    Phone #:
+                    <input type="tel" id="form-phone" name="phone" autocomplete="tel" required placeholder="987-654-3210" />
+                </label>
+    
+                <label for="form-company" title="Business or Organization's Name">
+                    Company Name:
+                    <input type="text" id="form-company" name="company" autocomplete="organization" required />
+                </label>
+    
+                <label for="form-level" title="Select a Membership Level">
+                    Membership Level:
+                    <select id="form-level" name="level" required>
+                        <option value="" disabled selected>Select a Membership Level ...</option>
+                        <option value="Non Profit">Non Profit Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+    
+                <label for="form-desc" title="Business or Organization's Description">
+                    Business Description:
+                    <textarea id="form-desc" name="desc"></textarea>
+                </label>
+    
+                <!-- Hidden timestamp (to be set with JS later) -->
+                <input type="hidden" name="time" id="timestamp" />
+    
+                <input type="submit" value="Confirm Membership Request" />
+            </form>
+    
+            <section id="membership-levels" aria-label="Membership Levels">
+                <h2>Membership Levels</h2>
+    
+                <div class="card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button type="button" aria-haspopup="dialog" aria-controls="modal-np">Learn More</button>
+                </div>
+    
+                <div class="card">
+                    <h3>Bronze Membership Level</h3>
+                    <button type="button" aria-haspopup="dialog" aria-controls="modal-bronze">Learn More</button>
+                </div>
+    
+                <div class="card">
+                    <h3>Silver Membership Level</h3>
+                    <button type="button" aria-haspopup="dialog" aria-controls="modal-silver">Learn More</button>
+                </div>
+    
+                <div class="card">
+                    <h3>Gold Membership Level</h3>
+                    <button type="button" aria-haspopup="dialog" aria-controls="modal-gold">Learn More</button>
+                </div>
+            </section>
+    
+            <!-- Modal dialogs (empty now; fill content later) -->
+            <dialog id="modal-np" aria-modal="true" role="dialog" aria-labelledby="modal-np-title">
+                <h3 id="modal-np-title">Non Profit Membership Benefits</h3>
+                <p>Benefits include no fee, community support, and networking opportunities.</p>
+                <button type="button" aria-label="Close Non Profit Benefits Modal">Close</button>
+            </dialog>
+    
+            <dialog id="modal-bronze" aria-modal="true" role="dialog" aria-labelledby="modal-bronze-title">
+                <h3 id="modal-bronze-title">Bronze Membership Benefits</h3>
+                <p>Benefits include special events, training, and advertising opportunities.</p>
+                <button type="button" aria-label="Close Bronze Benefits Modal">Close</button>
+            </dialog>
+    
+            <dialog id="modal-silver" aria-modal="true" role="dialog" aria-labelledby="modal-silver-title">
+                <h3 id="modal-silver-title">Silver Membership Benefits</h3>
+                <p>Benefits include all Bronze benefits plus event discounts and spotlight advertising.</p>
+                <button type="button" aria-label="Close Silver Benefits Modal">Close</button>
+            </dialog>
+    
+            <dialog id="modal-gold" aria-modal="true" role="dialog" aria-labelledby="modal-gold-title">
+                <h3 id="modal-gold-title">Gold Membership Benefits</h3>
+                <p>Benefits include all Silver benefits plus premium event access and featured homepage ads.</p>
+                <button type="button" aria-label="Close Gold Benefits Modal">Close</button>
+            </dialog>
+    
+        </div>
+    </main>
+
+    <footer>
+        <section class="contact">
+            <p><strong>Winnipeg Chamber of Commerce</strong></p>
+            <p>111 Main St. Winnipeg, MB R2J2J3</p>
+            <p>Email: <a href="info@timbuktucc.org">info@winnipegchamber.org</a></p>
+            <p>Phone: (204) 123-1234</p>
+        </section>
+        <section class="sociallinks" aria-label="Social Media Links">
+            <a href="https://youtube.com" title="YouTube">
+                <img src="images/youtube.png" alt="YouTube Logo">
+            </a>
+            <a href="https://twitter.com" title="Twitter">
+                <img src="images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://linkedin.com" title="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn Logo">
+            </a>
+        </section>
+
+        <section class="designer">
+            <p>WDD231 Class Project </p>
+            <p>🇵🇭 Glenn Soriano 🇵🇭</p>
+            <p>&copy; <span id="current-year"></span> Winnipeg Chamber of Commerce</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </section>
+
+    </footer>
+
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</body>
+
+</html>
