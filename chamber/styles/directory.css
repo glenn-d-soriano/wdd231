@@ -265,7 +265,55 @@ a.cta-button:focus-visible {
     border-radius: 6px;
 }
 
+#weather-icon {
+    width: 50px;
+    height: 50px;
+}
 
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    /* Same as .spotlights */
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border: 4px double black;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.info-cards .card {
+    background-color:#bbeaff;
+    padding: 1rem 0.75rem;
+    /* Slightly less padding */
+    text-align: left;
+    flex: 1 1 250px;
+    max-width: 280px;
+    /* Slightly narrower */
+    border: 2px solid #ccc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+    /* Less outer space */
+    box-sizing: border-box;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card ul,
+.card p,
+.card figure {
+    margin: 0.5rem 0;
+}
+
+.card ul li {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
 .spotlight-container {
     display: flex;
     justify-content: space-around;
@@ -317,23 +365,18 @@ a.cta-button:focus-visible {
     color: navy;
     text-decoration: underline;   }
 
-
-
-
-
 .forecast-container {
     display: flex;
-    gap: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start; /* Or center */
     flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
-.forecast-card {
-    background: #88dde9;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-}
+
+
+
 
 /* DIRECTORY CONTROLS */
 .directory-controls {
