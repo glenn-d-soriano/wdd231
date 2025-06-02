@@ -506,7 +506,9 @@ footer a {
 
 footer .social-links a img {
     width: 24px;
+    height: 24px;
     margin: 0 5px;
+    object-fit: contain;
 }
 
 footer .footer-note {
