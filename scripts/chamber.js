@@ -24,7 +24,6 @@ const courses = [
     { subject: 'WDD', number: 231, title: 'Frontend Web Dev I', credits: 2, certificate: 'Web and Computer Programming', description: '...', technology: ['HTML', 'CSS', 'JavaScript'], completed: false }
 ];
 
-// Render logic for courses with checkmark next to completed ones
 function renderCourses(list) {
     const container = document.getElementById('courseContainer');
     container.innerHTML = ''; // Clear any existing content
@@ -34,16 +33,20 @@ function renderCourses(list) {
         button.textContent = `${course.subject} ${course.number} - ${course.title}`;
         button.className = 'course-btn';
 
-        // Add a checkmark if the course is completed
         if (course.completed) {
-            button.innerHTML += ' &#x2714;'; // Unicode checkmark for completed courses
-            button.classList.add('completed'); // Optionally style completed courses differently
+            button.innerHTML += ' &#x2714;';
+            button.classList.add('completed');
         }
+
+        // Add click event to show modal
+        button.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         container.appendChild(button);
     });
 
-    updateTotalCredits(list); // Update total credits after rendering
+    updateTotalCredits(list);
 }
 
 // Filter buttons
@@ -63,3 +66,30 @@ function updateTotalCredits(coursesToDisplay) {
 
 // Initial render
 renderCourses(courses);
+
+const courseDetails = document.getElementById("course-details");
+
+// You can place this inside your main or a specific section
+const courseSection = document.querySelector("main");
+
+
+
+// Modal display function
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+    <button id="closeModal" aria-label="Close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+  `;
+
+    courseDetails.showModal();
+
+    // Close logic
+    document.getElementById("closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
