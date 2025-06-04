@@ -303,7 +303,7 @@ a.cta-button:focus-visible {
     flex: 1 1 250px;
     max-width: 280px;
     /* Slightly narrower */
-    border: 2px solid #ccc;
+    border: 2px solid #040404;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     margin: 0.5rem;
     /* Less outer space */
@@ -347,7 +347,7 @@ a.cta-button:focus-visible {
     box-sizing: border-box;   }
 
 .spotlight-card {
-    background-color: #00aaf0;
+    background-color: #bbeaff;
     color: black;
     padding: 1rem;
     text-align: center;
@@ -812,11 +812,40 @@ dialog button {
         padding: 1rem;
     }
 }
+
 @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
     to {
         opacity: 1;
         transform: translateY(0);
-    } }
+    }
+}
+
+#membership-levels .card {
+    opacity: 0;
+    animation: fadeUp 1s ease-out forwards;
+}
+
+/* Optional: staggered animation for each card */
+#membership-levels .card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#membership-levels .card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+#membership-levels .card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+#membership-levels .card:nth-child(4) {
+    animation-delay: 0.8s;
+}
 
 
     
