@@ -35,29 +35,3 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Wireframe styles */
-.wireframe-container {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.wireframe {
-    border: 2px dashed var(--primary-color);
-    padding: 1rem;
-    width: 320px;
-}
-
-.wireframe svg {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-figcaption {
-    text-align: center;
-    margin-top: 0.5rem;
-    font-style: italic;
-    color: var(--secondary-color);
-}
