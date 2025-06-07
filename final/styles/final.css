@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #0077b6;
+    /* Deep blue - headings, accents */
+    --secondary-color: #f4a261;
+    /* Warm orange - buttons, highlights */
+    --background-color: #ffffff;
+    /* White background */
+    --text-color: #222222;
+    /* Dark text for readability */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+header,
+section {
+    margin-bottom: 2rem;
+}
+
+/* Wireframe styles */
+.wireframe-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wireframe {
+    border: 2px dashed var(--primary-color);
+    padding: 1rem;
+    width: 320px;
+}
+
+.wireframe svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--secondary-color);
+}
