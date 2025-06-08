@@ -872,10 +872,8 @@ dialog button {
 }
 
 .gallery {
-    grid-area: gallery;
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    /* Mobile: 1 card */
 }
 
 @media (min-width: 641px) {
@@ -886,16 +884,17 @@ dialog button {
             "gallery gallery";
         grid-template-columns: 1fr 3fr;
     }
-}
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
+        /* Medium: 2 cards */
     }
-
+}
 
 @media (min-width: 1025px) {
     .gallery {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        /* Desktop: 3 cards */
     }
 }
 
@@ -914,5 +913,3 @@ dialog button {
     }
 }
 
-
-    
