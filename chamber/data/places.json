@@ -1,0 +1,50 @@
+[
+    {
+        "name": "The Forks Market",
+        "image": "images/forks.webp",
+        "address": "1 Forks Market Rd, Winnipeg, MB",
+        "description": "A historic site and popular gathering place with shops, restaurants, and cultural attractions."
+    },
+    {
+        "name": "Assiniboine Park Zoo",
+        "image": "images/assiniboineparkzoo.webp",
+        "address": "2595 Roblin Blvd, Winnipeg, MB",
+        "description": "A world-class zoo with over 200 species, including the polar bear exhibit."
+    },
+    {
+        "name": "The Manitoba Museum",
+        "image": "images/manitobamuseum.webp",
+        "address": "190 Rupert Ave, Winnipeg, MB",
+        "description": "Explore Manitoba’s history, culture, and science exhibits at this interactive museum."
+    },
+    {
+        "name": "Royal Canadian Mint",
+        "image": "images/royalcanadianmint.webp",
+        "address": "520 Lagimodiere Blvd, Winnipeg, MB",
+        "description": "Discover the art of coin production and see how money is made at this fascinating facility."
+    },
+    {
+        "name": "Assiniboine Forest",
+        "image": "images/assiniboineforest.webp",
+        "address": "Assiniboine Park, Winnipeg, MB",
+        "description": "A large forest area offering hiking trails, wildlife, and outdoor recreational activities."
+    },
+    {
+        "name": "St. Boniface Cathedral",
+        "image": "images/stbonifacecathedral.webp",
+        "address": "190 Ave. de la Cathédrale, Winnipeg, MB",
+        "description": "A beautiful historic cathedral that stands as a symbol of the city’s French heritage."
+    },
+    {
+        "name": "The Exchange District",
+        "image": "images/exchangedistrict.webp",
+        "address": "Winnipeg, MB",
+        "description": "A vibrant area of historical architecture, galleries, shops, and restaurants."
+    },
+    {
+        "name": "The Human Rights Museum",
+        "image": "images/humanrightsmuseum.webp",
+        "address": "85 Israel Asper Way, Winnipeg, MB",
+        "description": "The Canadian Museum for Human Rights offers an inspiring, emotional, and educational experience."
+    }
+]

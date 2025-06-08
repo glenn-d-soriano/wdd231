@@ -847,5 +847,60 @@ dialog button {
     animation-delay: 0.8s;
 }
 
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+        "visitor"
+        "gallery";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
 
+.visitor-msg {
+    grid-area: visitor;
+    padding: 1rem;
+    background-color: #eef;
+    font-weight: bold;
+}
+
+.gallery {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-areas:
+            "visitor visitor"
+            "gallery gallery";
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (hover: hover) {
+    .card:hover img {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        filter: brightness(1.1);
+    }
+}
     

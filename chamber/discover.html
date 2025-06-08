@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-CA">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,8 @@
     <meta name="author" content="Glenn Soriano">
     <meta property="og:title" content="Winnipeg Chamber of Commerce">
     <meta property="og:description" content="Discover local businesses, events, and services in Winnipeg.">
-    <meta property="og:image" content="https://glenn-d-soriano.github.io/wdd231/chamber/images/winnipeglogo.jpg">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="600">
-    <meta property="og:url" content="https://glenn-d-soriano.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://glenn-d-soriano.github.io/wdd231/chamber/images/chamber-banner.jpg" />
+    <meta property="og:url" content="https://glenn-d-soriano.github.io/wdd231/chamber/discover.html" />
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_CA">
     <meta property="og:site_name" content="WDD 231 - Glenn Soriano">
@@ -19,11 +18,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/directory.css">
-    <title>Home | Winnipeg Chamber of Commerce</title>
-
+    <title>Discover | Winnipeg Chamber of Commerce</title>
 </head>
 
-<body class="index-page">
+<body class="discover-page">
     <header>
         <div class="logo">
             <img src="images/winnipeglogo.jpg" alt="Winnipeg Chamber of Commerce Logo" />
@@ -32,63 +30,25 @@
         <nav>
             <button id="menuBtn" aria-label="Menu">☰</button>
             <ul id="navMenu">
-                <li><a href="index.html" class="active" id="menu-home">Home</a></li>
+                <li><a href="index.html" id="menu-home">Home</a></li>
                 <li><a href="directory.html" id="menu-directory">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active" id="menu-directory">Directory</a></li>
                 <li><button id="mode-toggle" aria-label="Toggle dark mode">🌓</button></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/heroimage.jpeg" alt="City of Winnipeg" loading="lazy" />
-            <section class="cta" aria-label="Chamber Call to Action">
-                <h1>Grow With Us!</h1>
-                <a href="join.html" class="cta-button">Join the Chamber</a>    
-            </section>
-              
+    <main class="discover-grid">
+        <aside class="visitor-msg" id="visitor-message">
+            <!-- JS will inject visit message here -->
+        </aside>
+    
+        <section class="gallery">
+            <!-- Cards will be inserted here with JS -->
         </section>
+        </main>
 
-        
-        <!-- Info Cards Container -->
-        <section class="info-cards">
-            <section class="events card">
-                <h2>Upcoming Events</h2>
-                <ul>
-                    <li>Business Networking Breakfast – May 30, 2025</li>
-                    <li>Chamber Gala – June 15, 2025</li>
-                </ul>
-            </section>
-        
-            <section class="weather card" id="weather-section">
-                <h2>Current Weather</h2>
-                <div class="weather-current">
-                    <p id="current-temp"></p>
-                    <figure>
-                        <img id="weather-icon" src="images/default-weather.png" alt="Weather icon" />
-                        <figcaption id="weather-desc"></figcaption>
-                    </figure>
-                    <div id="weather-details"></div>
-                </div>
-            </section>
-        
-            <section class="forecast card">
-                <h2>3-Day Forecast</h2>
-                <div id="forecast-cards" class="forecast-container">
-                    <!-- JS will inject forecast cards here -->
-                </div>
-            </section>
-        </section>
-
-        
-        <!-- Member Spotlights -->
-        <section class="spotlight">
-            <h2>Member Spotlights</h2>
-            <div id="spotlights" class="spotlight-container"></div>
-        </section>
-    </main>
 
     <footer>
         <section class="contact">
@@ -108,18 +68,18 @@
                 <img src="images/instagram.png" alt="Instagam Logo">
             </a>
         </section>
-
+    
         <section class="designer">
             <p>WDD231 Class Project </p>
             <p>🇵🇭 Glenn Soriano 🇵🇭</p>
             <p>&copy; <span id="current-year"></span> Winnipeg Chamber of Commerce</p>
             <p>Last Modified: <span id="last-modified"></span></p>
         </section>
-
+    
     </footer>
-
+    
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-</body>
-
-</html>
+    <script src="scripts/discover.js" defer></script>
+    </body>
+    
+    </html>
