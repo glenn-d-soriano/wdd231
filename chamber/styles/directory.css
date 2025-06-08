@@ -851,6 +851,11 @@ dialog button {
 }
 
 .discover-grid {
+    max-width: 1200px;
+        /* or whatever max width you want */
+    margin: 0 auto;
+        /* center horizontally */
+    padding: 0 1rem;
     display: grid;
     grid-template-areas:
         "heading"
@@ -875,6 +880,7 @@ dialog button {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    width: 100%;
     /* Mobile: 1 card */
 }
 
@@ -884,7 +890,7 @@ dialog button {
             "heading heading"
             "visitor visitor"
             "gallery gallery";
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr;
     }
 
     .gallery {
