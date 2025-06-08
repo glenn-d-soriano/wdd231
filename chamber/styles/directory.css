@@ -47,6 +47,9 @@ h1 {
     color: #004d66;
 }    
 
+.discover-page h1 {
+    color: #004d66;
+}
 .thankyou-page h1 {
     color: #004d66;
 }
@@ -850,10 +853,15 @@ dialog button {
 .discover-grid {
     display: grid;
     grid-template-areas:
+        "heading"
         "visitor"
         "gallery";
     grid-template-columns: 1fr;
     gap: 1rem;
+}
+
+.discover-grid h1 {
+    grid-area: heading;
 }
 
 .visitor-msg {
@@ -873,15 +881,17 @@ dialog button {
 @media (min-width: 641px) {
     .discover-grid {
         grid-template-areas:
+            "heading heading"
             "visitor visitor"
             "gallery gallery";
         grid-template-columns: 1fr 3fr;
     }
+}
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+
 
 @media (min-width: 1025px) {
     .gallery {

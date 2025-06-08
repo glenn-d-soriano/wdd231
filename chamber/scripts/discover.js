@@ -19,7 +19,20 @@ fetch('data/places.json')
                 gallery.appendChild(card);
             }
         });
-    });
+
+        // Add event listener for Learn More buttons (event delegation)
+        gallery.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                const card = e.target.closest('.card');
+                const placeName = card.querySelector('h2').textContent;
+                const address = card.querySelector('address').textContent;
+                const description = card.querySelector('p').textContent;
+
+                alert(`Learn more about ${placeName}\n\nAddress: ${address}\n\nDescription: ${description}`);
+            }
+        });
+        
+
 
 // Handle visit message
 const message = document.getElementById('visitor-message');
