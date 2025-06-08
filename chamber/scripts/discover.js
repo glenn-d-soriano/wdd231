@@ -1,3 +1,25 @@
+// === Visitor Message Logic ===
+const message = document.getElementById('visitor-message');
+const msInDay = 1000 * 60 * 60 * 24;
+const lastVisit = localStorage.getItem('lastVisit');
+const now = Date.now();
+
+if (!lastVisit) {
+    message.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const days = Math.floor((now - Number(lastVisit)) / msInDay);
+    if (days < 1) {
+        message.textContent = "Back so soon! Awesome!";
+    } else {
+        const dayText = days === 1 ? "day" : "days";
+        message.textContent = `You last visited ${days} ${dayText} ago.`;
+    }
+}
+
+// Update localStorage with current visit timestamp
+localStorage.setItem('lastVisit', now);
+
+
 fetch('data/places.json')
     .then(res => res.json())
     .then(data => {

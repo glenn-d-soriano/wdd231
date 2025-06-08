@@ -872,7 +872,7 @@ dialog button {
 .visitor-msg {
     grid-area: visitor;
     padding: 1rem;
-    background-color: #eef;
+    background-color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
