@@ -851,10 +851,7 @@ dialog button {
 }
 
 .discover-grid {
-    max-width: 1200px;
-        /* or whatever max width you want */
-    margin: 0 auto;
-        /* center horizontally */
+    width: 1005;
     padding: 0 1rem;
     display: grid;
     grid-template-areas:
