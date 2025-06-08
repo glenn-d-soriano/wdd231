@@ -872,7 +872,9 @@ dialog button {
 }
 
 .gallery {
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
     /* Mobile: 1 card */
 }
 
