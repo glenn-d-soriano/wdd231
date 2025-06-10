@@ -44,7 +44,7 @@ fetch('data/places.json')
           <dialog id="${dialogId}" aria-labelledby="dialog-title-${index}" aria-modal="true">
             <h3 id="dialog-title-${index}">${item.name}</h3>
             <address>${item.address}</address>
-            <p>${item.description}</p>
+            <p>${item.moreDetails}</p>
             <button class="close-dialog">Close</button>
           </dialog>
         `;

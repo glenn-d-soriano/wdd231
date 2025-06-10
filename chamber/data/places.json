@@ -40,5 +40,20 @@
         "address": "190 Ave. de la Cathédrale, Winnipeg, MB",
         "description": "A beautiful historic cathedral that stands as a symbol of the city’s French heritage.",
         "moreDetails": "Originally built in 1818, the cathedral has been rebuilt several times and is now a stunning architectural blend of old and new. Explore the ruins of the 1908 façade, the adjoining cemetery, and learn about French and Métis history."
+    
+    },
+    {  
+        "name": "The Exchange District",
+        "image": "images/exchangedistrict.webp",
+        "address": "Winnipeg, MB",
+        "description": "A vibrant area of historical architecture, galleries, shops, and restaurants.",
+        "moreDetails": "Once Winnipeg's financial hub, the Exchange District is home to over 150 heritage buildings from the early 20th century. Walk cobblestone streets, explore independent boutiques and creative studios, and enjoy one of the city's liveliest arts and food scenes. It also hosts popular events like the Fringe Festival and Nuit Blanche."
+    },
+    {
+        "name": "The Human Rights Museum",
+        "image": "images/humanrightsmuseum.webp",
+        "address": "85 Israel Asper Way, Winnipeg, MB",
+        "description": "The Canadian Museum for Human Rights offers an inspiring, emotional, and educational experience.",
+        "moreDetails": "A world-first museum dedicated solely to the evolution, celebration, and future of human rights. The striking architecture leads you through interactive exhibits that explore global and Canadian rights issues. Its Tower of Hope offers a panoramic view of Winnipeg's skyline."
     }
 ]    
