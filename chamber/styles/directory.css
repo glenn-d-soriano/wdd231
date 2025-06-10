@@ -851,7 +851,7 @@ dialog button {
 }
 
 .discover-grid {
-    width: 1005;
+    width: 100%;
     padding: 0 1rem;
     display: grid;
     grid-template-areas:
@@ -895,6 +895,22 @@ dialog button {
         /* Medium: 2 cards */
     }
 }
+@media (min-width: 641px) {
+    .card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card img {
+        width: 200px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .card-content {
+        padding-left: 1rem;
+    }
+}
 
 @media (min-width: 1025px) {
     .gallery {
@@ -904,10 +920,27 @@ dialog button {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    /* Mobile: stack image and text */
     border: 1px solid #ccc;
-    padding: 0.5rem;
     background: #fff;
+    padding: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media (hover: hover) {
