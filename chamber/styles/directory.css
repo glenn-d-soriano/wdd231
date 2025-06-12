@@ -462,8 +462,8 @@ a.cta-button:focus-visible {
     overflow: hidden;
 }
 
-.card:hover {
-    transform: scale(1.02);
+.card:hover img {
+    
 }
 
 .card img {
@@ -943,11 +943,12 @@ dialog button {
     justify-content: center;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (min-width: 641px) {
     .card:hover img {
         transform: scale(1.05);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         filter: brightness(1.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     }
 }
 

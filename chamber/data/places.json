@@ -17,8 +17,8 @@
         "name": "The Manitoba Museum",
         "image": "images/manitobamuseum.webp",
         "address": "190 Rupert Ave, Winnipeg, MB",
-        "description": "Explore Manitoba’s history, culture, and science exhibits at this interactive museum.",
-        "moreDetails": "The Manitoba Museum offers immersive galleries, including a full-size replica of the Nonsuch ship, a planetarium, and hands-on science exhibits. It’s a must-visit for history buffs, students, and curious minds of all ages."
+        "description": "Explore Manitoba's history, culture, and science exhibits at this interactive museum.",
+        "moreDetails": "The Manitoba Museum offers immersive galleries, including a full-size replica of the Nonsuch ship, a planetarium, and hands-on science exhibits. It's a must-visit for history buffs, students, and curious minds of all ages."
     },
     {
         "name": "Royal Canadian Mint",
@@ -38,7 +38,7 @@
         "name": "St. Boniface Cathedral",
         "image": "images/stbonifacecathedral.webp",
         "address": "190 Ave. de la Cathédrale, Winnipeg, MB",
-        "description": "A beautiful historic cathedral that stands as a symbol of the city’s French heritage.",
+        "description": "A beautiful historic cathedral that stands as a symbol of the city's French heritage.",
         "moreDetails": "Originally built in 1818, the cathedral has been rebuilt several times and is now a stunning architectural blend of old and new. Explore the ruins of the 1908 façade, the adjoining cemetery, and learn about French and Métis history."
     
     },
