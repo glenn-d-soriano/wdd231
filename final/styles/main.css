@@ -97,8 +97,7 @@ nav {
 .hero {
     position: relative;
     width: 100%;
-    height: 50vh;
-    /* same height on both pages */
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -111,14 +110,15 @@ nav {
 
 .hero-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.7);
-    padding: 1rem 2rem;
-    border-radius: 1rem;
+    bottom: 10%;
+    left: 5%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
     max-width: 90%;
-}
+    border-radius: 0.5rem; }
+
+
 
 /* MAIN CONTENT */
 main {
