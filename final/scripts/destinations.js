@@ -24,6 +24,7 @@ const displayDestinations = (destinations) => {
       <img src="${item.image}" alt="${item.name}" loading="lazy" />
       <h3>${item.name}</h3>
       <p>${item.description}</p>
+      <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="visit-site">Visit Site</a>
       <button class="more-info" data-id="${index}">More Info</button>
       <button class="favorite-btn ${isFavorite ? 'favorited' : ''}" data-id="${item.id}">
         ${isFavorite ? "★ Favorited" : "☆ Favorite"}

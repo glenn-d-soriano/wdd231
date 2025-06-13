@@ -5,7 +5,8 @@
         "image": "images/elnido.webp",
         "address": "Palawan, Philippines",
         "description": "Crystal-clear waters and dramatic limestone cliffs.",
-        "moreDetails": "El Nido offers world-class snorkeling, island-hopping, and sunset cruises."
+        "moreDetails": "El Nido offers world-class snorkeling, island-hopping, and sunset cruises.",
+        "link": "https://guidetothephilippines.ph/articles/things-to-do/el-nido-palawan-travel-guide"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "image": "images/chocolatehills.webp",
         "address": "Bohol, Philippines",
         "description": "Over 1,200 cone-shaped hills.",
-        "moreDetails": "These unique formations turn brown in dry season, resembling chocolate mounds."
+        "moreDetails": "These unique formations turn brown in dry season, resembling chocolate mounds.",
+        "link": "https://www.bohol-philippines.com/chocolate-hills.html"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "image": "images/banauericeterraces.webp",
         "address": "Ifugao Province, Philippines",
         "description": "2,000-year-old hand-carved rice terraces.",
-        "moreDetails": "These terraces are a UNESCO World Heritage site and a cultural treasure."
+        "moreDetails": "These terraces are a UNESCO World Heritage site and a cultural treasure.",
+        "link": "https://whc.unesco.org/en/list/722/"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "image": "images/boracay.webp",
         "address": "Aklan, Philippines",
         "description": "Famous white sand beach and nightlife.",
-        "moreDetails": "Perfect for beach lovers, kite surfing, and stunning sunsets."
+        "moreDetails": "Perfect for beach lovers, kite surfing, and stunning sunsets.",
+        "link": "https://guidetothephilippines.ph/articles/ultimate-guides/boracay-travel-guide"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "image": "images/vigan.webp",
         "address": "Ilocos Sur, Philippines",
         "description": "Preserved Spanish colonial town.",
-        "moreDetails": "Cobblestone streets and horse-drawn carriages bring you back in time."
+        "moreDetails": "Cobblestone streets and horse-drawn carriages bring you back in time.",
+        "link": "https://whc.unesco.org/en/list/502/"
     },
     {
         "id": 6,
@@ -45,7 +50,8 @@
         "image": "images/mayon.webp",
         "address": "Albay, Philippines",
         "description": "Perfect cone-shaped volcano.",
-        "moreDetails": "A natural wonder and popular for hiking and photography."
+        "moreDetails": "A natural wonder and popular for hiking and photography.",
+        "link": "https://www.bicol.ph/mayon-volcano/"
     },
     {
         "id": 7,
@@ -53,7 +59,8 @@
         "image": "images/taal.webp",
         "address": "Batangas, Philippines",
         "description": "A volcano inside a lake on an island in a lake.",
-        "moreDetails": "Accessible from Manila for a quick day trip."
+        "moreDetails": "Accessible from Manila for a quick day trip.",
+        "link": "https://guidetothephilippines.ph/articles/what-to-experience/taal-volcano-travel-guide"
     },
     {
         "id": 8,
@@ -61,7 +68,8 @@
         "image": "images/coron.webp",
         "address": "Palawan, Philippines",
         "description": "Lakes, lagoons, and sunken WWII wrecks.",
-        "moreDetails": "A diver’s paradise with serene views."
+        "moreDetails": "A diver’s paradise with serene views.",
+        "link": "https://guidetothephilippines.ph/articles/things-to-do/coron-travel-guide"
     },
     {
         "id": 9,
@@ -69,7 +77,8 @@
         "image": "images/siargao.webp",
         "address": "Surigao del Norte, Philippines",
         "description": "Surf capital of the Philippines.",
-        "moreDetails": "Famous for Cloud 9 and laid-back island life."
+        "moreDetails": "Famous for Cloud 9 and laid-back island life.",
+        "link": "https://guidetothephilippines.ph/articles/what-to-experience/siargao-surfing-guide"
     },
     {
         "id": 10,
@@ -77,7 +86,8 @@
         "image": "images/hundredislands.webp",
         "address": "Pangasinan, Philippines",
         "description": "124 islands to explore at low tide.",
-        "moreDetails": "Great for kayaking, ziplining, and island-hopping."
+        "moreDetails": "Great for kayaking, ziplining, and island-hopping.",
+        "link": "https://guidetothephilippines.ph/articles/ultimate-guides/hundred-islands"
     },
     {
         "id": 11,
@@ -85,7 +95,8 @@
         "image": "images/camiguin.webp",
         "address": "Northern Mindanao, Philippines",
         "description": "Island born of fire.",
-        "moreDetails": "Seven volcanoes, hot springs, and waterfalls."
+        "moreDetails": "Seven volcanoes, hot springs, and waterfalls.",
+        "link": "https://www.camiguin.gov.ph/"
     },
     {
         "id": 12,
@@ -93,7 +104,8 @@
         "image": "images/sagada.webp",
         "address": "Mountain Province, Philippines",
         "description": "Hanging coffins and mountain views.",
-        "moreDetails": "A peaceful getaway for adventurers and spiritual seekers."
+        "moreDetails": "A peaceful getaway for adventurers and spiritual seekers.",
+        "link": "https://www.lonelyplanet.com/philippines/northern-luzon/sagada"
     },
     {
         "id": 13,
@@ -101,7 +113,8 @@
         "image": "images/davao.webp",
         "address": "Mindanao, Philippines",
         "description": "Durian capital and home of Mt. Apo.",
-        "moreDetails": "A mix of city life, natural parks, and indigenous culture."
+        "moreDetails": "A mix of city life, natural parks, and indigenous culture.",
+        "link": "https://www.davaotourism.com/"
     },
     {
         "id": 14,
@@ -109,7 +122,8 @@
         "image": "images/puertoprincesa.webp",
         "address": "Palawan, Philippines",
         "description": "Subterranean river system.",
-        "moreDetails": "One of the New 7 Wonders of Nature."
+        "moreDetails": "One of the New 7 Wonders of Nature.",
+        "link": "https://www.ppur.com.ph/"
     },
     {
         "id": 15,
@@ -117,6 +131,7 @@
         "image": "images/batanes.webp",
         "address": "Cagayan Valley, Philippines",
         "description": "Rolling hills and stone houses.",
-        "moreDetails": "A serene, remote escape with dramatic landscapes."
+        "moreDetails": "A serene, remote escape with dramatic landscapes.",
+        "link": "https://www.batanestravelguide.com/"
     }
 ]

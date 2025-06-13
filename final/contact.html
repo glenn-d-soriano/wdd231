@@ -1,0 +1,183 @@
+</html>
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore the natural beauty of the Philippines. Discover beaches, destinations, and travel tips." />
+    <meta name="author" content="Glenn Soriano" />
+    <meta property="og:title" content="Explore Philippines" />
+    <meta property="og:description"
+        content="Discover and enjoy the natural beauty and attractions of the Philippines." />
+    <meta property="og:image" content="https://glenn-d-soriano.github.io/wdd231/final/images/final.jpg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:url" content="https://glenn-d-soriano.github.io/wdd231/final/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="Explore Philippines - Glenn Soriano" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Explore Philippines | Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Explore Philippines Logo" />
+            <div class="logo-text"> <span>Book Now!</span></div>
+        </div>
+
+        <h1>Explore Philippines</h1>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html" class="active" id="menu-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero.webp" alt="Philippine tropical beach" loading="lazy" />
+            <div class="hero-text">
+                <h2>Discover Paradise</h2>
+                <p>Your guide to the best budget-friendly adventures in the Philippines.</p>
+
+                <h2>We'd Love to Hear From You!</h2>
+                <p class="intro-line">If you have any questions or feedback about your next Philippine adventure, feel
+                    free to
+                    get in touch with us.</p>
+            </div>
+        </section>
+
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required />
+
+                <label>Purpose of the Message:</label>
+                <ul class="radio-options">
+                    <li>
+                        <label for="general-inquiry">
+                            <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                            General Inquiry
+                        </label>
+                    </li>
+                    <li>
+                        <label for="reservation-question">
+                            <input type="radio" id="reservation-question" name="purpose" value="Reservation Question"
+                                required> Reservation Question
+                        </label>
+                    </li>
+                    <li>
+                        <label for="feedback">
+                            <input type="radio" id="feedback" name="purpose" value="Feedback" required> Feedback
+                        </label>
+                    </li>
+                </ul>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div class="form-item">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly
+                        newsletter
+                    </label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Meet Our Team Section -->
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <figure class="profile">
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>Efren Dela Cruz - Tour Guide</figcaption>
+            </figure>
+            <figure class="profile">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>Ramir Soriano - Trip Coordinator</figcaption>
+            </figure>
+            <figure class="profile">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>Mark Longoria - Safety Officer</figcaption>
+            </figure>
+        </section>
+
+        <!-- Our Location Section -->
+        <section class="our-location">
+            <h2>Our Location</h2>
+            <p>Come visit us and start your adventure with Explore Philippines!</p>
+            <address>
+                <p>123 Manila Road, Makati City, Metro Manila, Philippines</p>
+                <p>Phone: (02) 1234 5678</p>
+                <p>Email: <a href="mailto:info@explorephilippines.ph">info@explorephilippines.ph</a></p>
+            </address>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="400" height="300" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <section class="contact">
+                <p><strong>Winnipeg Chamber of Commerce</strong></p>
+                <p>111 Main St. Winnipeg, MB R2J2J3</p>
+                <p>Email: <a href="mailto:info@winnipegchamber.org">info@winnipegchamber.org</a></p>
+                <p>Phone: (204) 123-1234</p>
+            </section>
+
+            <section class="sociallinks" aria-label="Social Media Links">
+                <a href="https://youtube.com" title="YouTube">
+                    <img src="images/youtube.png" alt="YouTube Logo" width="32" height="32">
+                </a>
+                <a href="https://twitter.com" title="Twitter">
+                    <img src="images/twitter.png" alt="Twitter Logo" width="32" height="32">
+                </a>
+                <a href="https://www.instagram.com/" title="Instagram">
+                    <img src="images/instagram.png" alt="Instagram Logo" width="32" height="32">
+                </a>
+            </section>
+
+            <section class="designer">
+                <p>&copy; <span id="current-year"></span> Explore Philippines | 🇵🇭Glenn Soriano🇵🇭</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p>
+                    <a href="references.html">Attributions</a> |
+                    <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">Project Video</a>
+                </p>
+            </section>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script>
+        // Set dynamic year and last modified
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+
+</body>
+
+</html>

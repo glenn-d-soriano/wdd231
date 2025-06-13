@@ -26,15 +26,15 @@
     <header>
         <div class="logo">
             <img src="images/logo.jpeg" alt="Explore Philippines Logo" />
-            <div class="logo-text"> <span>Book Now!</span></div>    
+            <div class="logo-text"> <span>Book Now!</span></div>
         </div>
 
         <h1>Explore Philippines</h1>
         <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="index.html" class="active" id="menu-home">Home</a></li>
+                <li><a href="destinations.html" id="menu-discover">Destinations</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -86,7 +86,7 @@
                 <p>Email: <a href="mailto:info@winnipegchamber.org">info@winnipegchamber.org</a></p>
                 <p>Phone: (204) 123-1234</p>
             </section>
-    
+
             <section class="sociallinks" aria-label="Social Media Links">
                 <a href="https://youtube.com" title="YouTube">
                     <img src="images/youtube.png" alt="YouTube Logo" width="32" height="32">
@@ -98,7 +98,7 @@
                     <img src="images/instagram.png" alt="Instagram Logo" width="32" height="32">
                 </a>
             </section>
-    
+
             <section class="designer">
                 <p>&copy; <span id="current-year"></span> Explore Philippines | 🇵🇭Glenn Soriano🇵🇭</p>
                 <p>Last Modified: <span id="last-modified"></span></p>
@@ -109,10 +109,11 @@
             </section>
         </div>
     </footer>
-    
-    
 
     <script type="module" src="scripts/main.js"></script>
+    <script>
+        // Dynamic footer year and last modified
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
 </body>
-
-</html>
