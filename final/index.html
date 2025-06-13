@@ -2,98 +2,112 @@
 <html lang="en-CA">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Final project index page.">
-    <meta name="author" content="Glenn Soriano">
-    <meta property="og:title" content="Individual Project Site Plan">
-    <meta property="og:description" content="Discover and enjoy the natural beauty and attractions of the Philippines.">
-    <meta property="og:image" content="https://glenn-d-soriano.github.io/wdd231/final/images/final.jpg">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="600">
-    <meta property="og:url" content="https://glenn-d-soriano.github.io/wdd231/final/index.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_CA">
-    <meta property="og:site_name" content="WDD 231 - Glenn Soriano">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/final.css">
-    <title>Explore Philippines - Individual Project Site Plan</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore the natural beauty of the Philippines. Discover beaches, destinations, and travel tips." />
+    <meta name="author" content="Glenn Soriano" />
+    <meta property="og:title" content="Explore Philippines" />
+    <meta property="og:description"
+        content="Discover and enjoy the natural beauty and attractions of the Philippines." />
+    <meta property="og:image" content="https://glenn-d-soriano.github.io/wdd231/final/images/final.jpg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:url" content="https://glenn-d-soriano.github.io/wdd231/final/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="Explore Philippines - Glenn Soriano" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Explore Philippines | Home</title>
 </head>
 
 <body>
     <header>
-        <h1>Explore Philippines - Individual Project Site Plan</h1>
+        <h1>Explore Philippines</h1>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="site-name">
-        <h2>Site Name</h2>
-        <p><strong>Explore Philippines</strong></p>
-        <p>
-            The name "Explore Philippines" was selected because it clearly represents the
-            mission of the website: to encourage visitors to discover and enjoy the natural
-            beauty and attractions of the Philippines. It is simple, memorable, and highlights
-            the adventurous spirit of travel. Since I am travelling to the Philippines soon I would like to create this site for my project.
-        </p>
+    <section class="hero">
+        <img src="images/hero.webp" alt="Philippine tropical beach" loading="lazy" />
+        <div class="hero-text">
+            <h2>Discover Paradise</h2>
+            <p>Your guide to the best budget-friendly adventures in the Philippines.</p>
+        </div>
     </section>
 
-    <section id="site-purpose">
-        <h2>Site Purpose</h2>
-        <p>
-            The website aims to promote local Philippine destinations, focusing on breathtaking
-            beaches and stunning sceneries. It will offer travel guides, affordable vacation
-            options, insider tips, and cultural highlights to inspire travelers to choose the
-            Philippines for their next vacation without breaking their budget.
-        </p>
-    </section>
+    <main>
+        <section>
+            <h2>Why Explore the Philippines?</h2>
+            <p>
+                The Philippines is a tropical haven of over 7,000 islands, rich in culture and natural beauty.
+                Whether you're dreaming of pristine beaches, vibrant festivals, or delicious cuisine, this site helps
+                you plan the ultimate budget-friendly getaway.
+            </p>
+        </section>
 
-    <section id="scenarios">
-        <h2>Scenarios</h2>
-        <ul>
-            <li><strong>Where can I find affordable beach resorts with excellent reviews?</strong></li>
-            <li><strong>What are the top attractions  in the Philippines for leisure vacation?</strong></li>
-        </ul>
-    </section>
+        <section>
+            <h2>What You'll Find Here</h2>
+            <ul>
+                <li>🌴 Stunning destinations and hidden gems</li>
+                <li>💸 Affordable resorts and travel tips</li>
+                <li>📸 Real traveler reviews and guides</li>
+                <li>🗺️ Interactive maps and modals for each destination</li>
+            </ul>
+        </section>
 
-    <section id="color-schema">
-        <h2>Color Schema</h2>
-        <p>Two primary colors have been selected for the site:</p>
-        <ul>
-            <li><strong>Deep Blue (#0077b6):</strong> Used for headings, navigation bars, and buttons to convey trust
-                and tranquility.</li>
-            <li><strong>Warm Orange (#f4a261):</strong> Used for highlights, call-to-action buttons, and accents to add
-                warmth and energy.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-form">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+                <p id="newsletter-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
 
-    <section id="typography">
-        <h2>Typography</h2>
-        <p>The following fonts will be used:</p>
-        <ul>
-            <li><strong>Roboto:</strong> Used for all headings (h1, h2, h3) to provide a modern and clean look.</li>
-            <li><strong>Open Sans:</strong> Used for body text and paragraphs to ensure readability and a friendly tone.
-            </li>
-        </ul>
-    </section>
+    <footer>
+        <div class="footer-container">
+            <section class="contact">
+                <p><strong>Winnipeg Chamber of Commerce</strong></p>
+                <p>111 Main St. Winnipeg, MB R2J2J3</p>
+                <p>Email: <a href="mailto:info@winnipegchamber.org">info@winnipegchamber.org</a></p>
+                <p>Phone: (204) 123-1234</p>
+            </section>
     
-    <section id="wireframe">
-        <h2>Wireframe</h2>
-        <p>This section shows the planned homepage layout for both mobile and desktop views using sketches created for the
-            Explore Philippines project.</p>
+            <section class="sociallinks" aria-label="Social Media Links">
+                <a href="https://youtube.com" title="YouTube">
+                    <img src="images/youtube.png" alt="YouTube Logo" width="32" height="32">
+                </a>
+                <a href="https://twitter.com" title="Twitter">
+                    <img src="images/twitter.png" alt="Twitter Logo" width="32" height="32">
+                </a>
+                <a href="https://www.instagram.com/" title="Instagram">
+                    <img src="images/instagram.png" alt="Instagram Logo" width="32" height="32">
+                </a>
+            </section>
     
-        <figure>
-            <img src="images/mobile.jpg" alt="Mobile wireframe of Explore Philippines homepage" width="300">
-            <figcaption>Mobile View Wireframe</figcaption>
-        </figure>
+            <section class="designer">
+                <p>&copy; <span id="current-year"></span> Explore Philippines | Glenn Soriano</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p>
+                    <a href="references.html">Attributions</a> |
+                    <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">Project Video</a>
+                </p>
+            </section>
+        </div>
+    </footer>
     
-        <figure>
-            <img src="images/desktop.jpg" alt="Desktop wireframe of Explore Philippines homepage" width="600">
-            <figcaption>Desktop View Wireframe</figcaption>
-        </figure>
-    </section>
+    
+
+    <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>
