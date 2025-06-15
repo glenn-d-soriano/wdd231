@@ -135,7 +135,7 @@
             </section>
 
             <section class="designer" aria-label="Site Information">
-                <p>&copy; <span id="current-year"></span> Explore Philippines | 🇵🇭 Glenn Soriano 🇵🇭</p>
+                <p>&copy; <span id="current-year"></span> Explore Philippines | 🇵🇭Glenn Soriano🇵🇭</p>
                 <p>Last Modified: <span id="last-modified"></span></p>
                 <p>
                     <a href="references.html">Attributions</a> |
@@ -144,6 +144,13 @@
             </section>
         </div>
     </footer>
+    
+    <script type="module" src="scripts/main.js"></script>
+    <script>
+        // Dynamic footer year and last modified
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
 
 </body>
 
