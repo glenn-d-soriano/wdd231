@@ -51,7 +51,7 @@
         "address": "Albay, Philippines",
         "description": "Perfect cone-shaped volcano.",
         "moreDetails": "A natural wonder and popular for hiking and photography.",
-        "link": "https://www.bicol.ph/mayon-volcano/"
+        "link": "https://www.e-philippines.com.ph/philippine-tourist-destinations/mount-mayon-climb-packages-and-summit-expedition/"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "address": "Batangas, Philippines",
         "description": "A volcano inside a lake on an island in a lake.",
         "moreDetails": "Accessible from Manila for a quick day trip.",
-        "link": "https://guidetothephilippines.ph/articles/what-to-experience/taal-volcano-travel-guide"
+        "link": "https://www.taalvolcano.org/"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "address": "Palawan, Philippines",
         "description": "Lakes, lagoons, and sunken WWII wrecks.",
         "moreDetails": "A diver’s paradise with serene views.",
-        "link": "https://guidetothephilippines.ph/articles/things-to-do/coron-travel-guide"
+        "link": "https://www.coron-travel.com/"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "address": "Surigao del Norte, Philippines",
         "description": "Surf capital of the Philippines.",
         "moreDetails": "Famous for Cloud 9 and laid-back island life.",
-        "link": "https://guidetothephilippines.ph/articles/what-to-experience/siargao-surfing-guide"
+        "link": "https://guidetothephilippines.ph/articles/ultimate-guides/siargao-travel-guide"
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "address": "Pangasinan, Philippines",
         "description": "124 islands to explore at low tide.",
         "moreDetails": "Great for kayaking, ziplining, and island-hopping.",
-        "link": "https://guidetothephilippines.ph/articles/ultimate-guides/hundred-islands"
+        "link": "https://www.e-philippines.com.ph/philippine-tourist-destinations/hundred-islands-travel-and-tour-packages/"
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@
         "address": "Northern Mindanao, Philippines",
         "description": "Island born of fire.",
         "moreDetails": "Seven volcanoes, hot springs, and waterfalls.",
-        "link": "https://www.camiguin.gov.ph/"
+        "link": "https://www.e-philippines.com.ph/philippine-tourist-destinations/camiguin-travel-and-tour-packages/"
     },
     {
         "id": 12,
@@ -105,7 +105,7 @@
         "address": "Mountain Province, Philippines",
         "description": "Hanging coffins and mountain views.",
         "moreDetails": "A peaceful getaway for adventurers and spiritual seekers.",
-        "link": "https://www.lonelyplanet.com/philippines/northern-luzon/sagada"
+        "link": "https://tripinas.com.ph/Sagada-packages-and-deals.html"
     },
     {
         "id": 13,
@@ -114,7 +114,7 @@
         "address": "Mindanao, Philippines",
         "description": "Durian capital and home of Mt. Apo.",
         "moreDetails": "A mix of city life, natural parks, and indigenous culture.",
-        "link": "https://www.davaotourism.com/"
+        "link": "https://guidetothephilippines.ph/articles/what-to-experience/davao-travel-guide"
     },
     {
         "id": 14,
@@ -132,6 +132,6 @@
         "address": "Cagayan Valley, Philippines",
         "description": "Rolling hills and stone houses.",
         "moreDetails": "A serene, remote escape with dramatic landscapes.",
-        "link": "https://www.batanestravelguide.com/"
+        "link": "https://www.batanestravelandtours.com/"
     }
 ]
