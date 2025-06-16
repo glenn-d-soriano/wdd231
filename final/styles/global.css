@@ -113,13 +113,13 @@ nav {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    color: #f4a261;
+    color: #000000;
 }
 
 .nav-links a.active {
-    color: #FF5722;
+    color: #000000;
     font-weight: bold;
-    border-bottom: 2px solid #FF5722;
+    border-bottom: 2px solid #010101;
     padding-bottom: 2px;
 }
 
@@ -177,7 +177,7 @@ footer section {
 }
 
 footer a {
-    color: #f4a261;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -250,3 +250,4 @@ footer a:focus {
     text-align: center;
     margin-top: 1.5rem;
 }
+
