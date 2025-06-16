@@ -36,7 +36,7 @@ section {
 
 section h2,
 h2 {
-    color: #2597c4;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     margin: 2rem 0 1rem;
 }
@@ -66,27 +66,37 @@ ul li {
     /* styles for the features section */
     padding: 2rem;
     background-color: #f0f0f0;
-}
-
-.feature-grid {
+  }
+  
+  .feature-grid {
     /* grid layout for feature cards */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-}
-
-.contact {
+  }
+  
+  .contact {
     /* styling for contact info in footer */
     font-size: 0.9rem;
     color: #333;
-}
-
-.designer {
+  }
+  
+  .designer {
     /* styling for the footer site info */
     font-style: italic;
     font-size: 0.8rem;
     color: #666;
-}
+  }
+
+  .site-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0077b6;
+      /* matching your header/nav color */
+      text-align: center;
+      margin: 1rem 0;
+      font-family: 'Roboto', sans-serif;
+  }
 /* Newsletter Section */
 .newsletter {
     background-color: #f7f9fc;
