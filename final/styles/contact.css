@@ -99,3 +99,29 @@ form button:focus {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
     margin: 0.5rem 0;
 }
+
+/* Style the contact form container */
+.contact-form {
+    max-width: 600px;
+    margin: 1em auto;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Style the list of radio options */
+.radio-options {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1em;
+}
+
+.radio-options li {
+    margin-bottom: 0.5em;
+}
+
+/* Style the checkbox container */
+.form-item {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
