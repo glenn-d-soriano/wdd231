@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     // Newsletter form handling
     const form = document.getElementById("newsletter-form");
     const message = document.getElementById("newsletter-message");
@@ -31,6 +31,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Contact form confirmation
+    const contactForm = document.querySelector(".contact-form form");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            this.innerHTML = `<p class="confirmation-message">✅ Thank you! Your message has been sent.</p>`;
+        });
+    }
+
+    // Hamburger menu toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+        });
+    }
+
     // Footer dynamic year and last modified date
     const yearEl = document.getElementById("current-year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -38,22 +56,3 @@ document.addEventListener('DOMContentLoaded', () => {
     const modifiedEl = document.getElementById("last-modified");
     if (modifiedEl) modifiedEl.textContent = document.lastModified;
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.querySelector(".contact-form form");
-
-    if (contactForm) {
-        contactForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            // Replace the form with a confirmation message
-            this.innerHTML = `
-                <p class="confirmation-message">
-                    ✅ Thank you! Your message has been sent.
-                </p>
-            `;
-        });
-    }
-});
-
-  
