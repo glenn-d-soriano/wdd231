@@ -1,29 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Newsletter form handling
     const form = document.getElementById("newsletter-form");
     const message = document.getElementById("newsletter-message");
     const reviewCountSpan = document.getElementById("reviewCount");
 
-    // Initialize count from localStorage or zero
     let subscriptionCount = Number(localStorage.getItem("subscriptionCount")) || 0;
-    reviewCountSpan.textContent = subscriptionCount;
+    if (reviewCountSpan) {
+        reviewCountSpan.textContent = subscriptionCount;
+    }
 
     if (form) {
         form.addEventListener("submit", function (e) {
             e.preventDefault();
             const emailInput = document.getElementById("email");
             const email = emailInput.value.trim();
-
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (emailPattern.test(email)) {
-                // Save email to localStorage (optional: could save as list, but here just one for demo)
                 localStorage.setItem("newsletterEmail", email);
-
-                // Increase count and update storage/display
                 subscriptionCount++;
                 localStorage.setItem("subscriptionCount", subscriptionCount);
-                reviewCountSpan.textContent = subscriptionCount;
-
+                if (reviewCountSpan) reviewCountSpan.textContent = subscriptionCount;
                 message.textContent = "✅ Thank you for subscribing!";
                 message.style.color = "green";
                 form.reset();
@@ -33,12 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
 
-// Footer dynamic year and last modified date
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-    document.getElementById("last-modified").textContent = document.lastModified;
-});
+    // Footer dynamic year and last modified date
+    const yearEl = document.getElementById("current-year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+    const modifiedEl = document.getElementById("last-modified");
+    if (modifiedEl) modifiedEl.textContent = document.lastModified;
+});
   
