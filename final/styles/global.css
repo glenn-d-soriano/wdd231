@@ -234,3 +234,19 @@ footer a:focus {
     z-index: 999 !important;
     position: relative !important;
 }
+
+.contact {
+    /* styling for contact info in footer */
+    font-size: 0.9rem;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.designer {
+    /* styling for the footer site info */
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1.5rem;
+}
