@@ -38,4 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const modifiedEl = document.getElementById("last-modified");
     if (modifiedEl) modifiedEl.textContent = document.lastModified;
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.querySelector(".contact-form form");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Replace the form with a confirmation message
+            this.innerHTML = `
+                <p class="confirmation-message">
+                    ✅ Thank you! Your message has been sent.
+                </p>
+            `;
+        });
+    }
+});
+
   
