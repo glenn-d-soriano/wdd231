@@ -69,6 +69,12 @@ body {
     font-size: 1rem;
     font-weight: 300;
 }
+section h2,
+h2 {
+    color: #020202;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem 0 1rem;
+}
 /* Header + Nav */
 header {
     background-color: #0077b6;
@@ -219,4 +225,12 @@ footer a:focus {
     footer section {
         margin-bottom: 1rem;
     }
+}
+
+.site-title {
+    display: block !important;
+    color: #000 !important;
+    font-size: 2rem !important;
+    z-index: 999 !important;
+    position: relative !important;
 }

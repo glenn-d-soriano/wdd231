@@ -34,11 +34,12 @@ section {
     padding-top: 1rem;
 }
 
-section h2,
-h2 {
+.hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    margin: 2rem 0 1rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    margin: 0.5rem 0;
 }
 
 ul {
@@ -75,18 +76,7 @@ ul li {
     gap: 1.5rem;
   }
   
-  .contact {
-    /* styling for contact info in footer */
-    font-size: 0.9rem;
-    color: #333;
-  }
-  
-  .designer {
-    /* styling for the footer site info */
-    font-style: italic;
-    font-size: 0.8rem;
-    color: #666;
-  }
+ 
 /* Newsletter Section */
 .newsletter {
     background-color: #f7f9fc;
