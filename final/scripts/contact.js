@@ -13,9 +13,14 @@ export function setupContactForm() {
         const name = form.elements.name.value.trim();
         const email = form.elements.email.value.trim();
         const userMessage = form.elements.message.value.trim();
+        const newsletterChecked = form.elements.newsletter.checked;
 
         if (name && email && userMessage) {
-            message.textContent = "Thank you for your message!";
+            let responseText = "Thank you for your message!";
+            if (newsletterChecked) {
+                responseText += " You have been subscribed to our newsletter.";
+            }
+            message.textContent = responseText;
             message.style.color = "green";
             form.reset();
         } else {
@@ -24,4 +29,3 @@ export function setupContactForm() {
         }
     });
 }
-
