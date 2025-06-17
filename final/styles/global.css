@@ -229,7 +229,7 @@ footer a:focus {
         /* make sure it's above other content */
     }
 
-    .nav-links.show {
+    .nav-links.open {
         display: flex;
     }
 
