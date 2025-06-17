@@ -1,7 +1,7 @@
-import { getFavorites, toggleFavorite } from './storage.js';
+export const displayDestinations = (destinations) => {
+    const cardContainer = document.querySelector("#destination-cards");
+    cardContainer.innerHTML = "";  // clear old content
 
-export const displayDestinations = (destinations, cardContainer) => {
-    cardContainer.innerHTML = ''; // clear existing content
     destinations.forEach((item, index) => {
         const card = document.createElement("div");
         card.classList.add("destination-card");
@@ -15,12 +15,13 @@ export const displayDestinations = (destinations, cardContainer) => {
             <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="visit-site">Visit Site</a>
             <button class="more-info" data-id="${index}">More Info</button>
             <button class="favorite-btn ${isFavorite ? 'favorited' : ''}" data-id="${item.id}">
-              ${isFavorite ? "★ Favorited" : "☆ Favorite"}
+                ${isFavorite ? "★ Favorited" : "☆ Favorite"}
             </button>
         `;
 
         cardContainer.appendChild(card);
 
+        // Modal dialog
         const dialog = document.createElement("dialog");
         dialog.setAttribute("id", `dialog-${index}`);
         dialog.setAttribute("aria-labelledby", `dialog-title-${index}`);
@@ -39,23 +40,43 @@ export const displayDestinations = (destinations, cardContainer) => {
 };
 
 const addEventListeners = () => {
-    document.querySelectorAll(".more-info").forEach(btn => {
+    document.querySelectorAll(".more-info").forEach((btn) => {
         btn.addEventListener("click", () => {
             const index = btn.getAttribute("data-id");
             document.querySelector(`#dialog-${index}`).showModal();
         });
     });
 
-    document.querySelectorAll(".close-dialog").forEach(btn => {
+    document.querySelectorAll(".close-dialog").forEach((btn) => {
         btn.addEventListener("click", () => {
             btn.closest("dialog").close();
         });
     });
 
-    document.querySelectorAll(".favorite-btn").forEach(btn => {
+    document.querySelectorAll(".favorite-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
             const id = btn.getAttribute("data-id");
             toggleFavorite(id, btn);
         });
     });
+};
+
+const getFavorites = () => {
+    return JSON.parse(localStorage.getItem("favorites")) || [];
+};
+
+const toggleFavorite = (id, btn) => {
+    let favorites = getFavorites();
+
+    if (favorites.includes(id)) {
+        favorites = favorites.filter((fav) => fav !== id);
+        btn.classList.remove("favorited");
+        btn.textContent = "☆ Favorite";
+    } else {
+        favorites.push(id);
+        btn.classList.add("favorited");
+        btn.textContent = "★ Favorited";
+    }
+
+    localStorage.setItem("favorites", JSON.stringify(favorites));
 };

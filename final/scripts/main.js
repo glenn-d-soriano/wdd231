@@ -7,12 +7,10 @@ async function init() {
         const destinations = await fetchDestinations();
         displayDestinations(destinations);
     } catch (error) {
-        document.querySelector("#destination-cards").innerHTML =
-            "<p>Failed to load destinations.</p>";
+        document.querySelector("#destination-cards").innerHTML = "<p>Failed to load destinations.</p>";
         console.error(error);
     }
 
-    // Setup subscribe form after DOM is ready
     setupSubscribeForm();
 }
 
