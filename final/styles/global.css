@@ -251,3 +251,11 @@ footer a:focus {
     margin-top: 1.5rem;
 }
 
+/* Ensure consistent h1 sizing in semantic sections */
+section h1,
+article h1,
+aside h1,
+nav h1 {
+    font-size: 2rem;
+    /* Match your intended h1 size */
+}
