@@ -91,7 +91,16 @@ header h1 {
     margin: 0;
 }
 
-
+/* Ensure consistent h1 sizing in semantic sections */
+section h1,
+article h1,
+aside h1,
+nav h1 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+    /* Match your intended h1 size */
+}
 nav {
     margin-top: 0.5rem;
 }
@@ -251,14 +260,6 @@ footer a:focus {
     margin-top: 1.5rem;
 }
 
-/* Ensure consistent h1 sizing in semantic sections */
-section h1,
-article h1,
-aside h1,
-nav h1 {
-    font-size: 2rem;
-    /* Match your intended h1 size */
-}
 
 .form-message {
     margin-top: 0.5rem;
