@@ -1,15 +1,19 @@
-import { fetchDestinations } from './fetchDestinations.js';
-import { displayDestinations } from './ui.js';
+import { fetchDestinations } from "./fetchDestinations.js";
+import { displayDestinations } from "./ui.js";
+import { setupSubscribeForm } from "./subscribe.js";
 
-const cardContainer = document.querySelector("#destination-cards");
-
-const initialize = async () => {
+async function init() {
     try {
         const destinations = await fetchDestinations();
-        displayDestinations(destinations, cardContainer);
+        displayDestinations(destinations);
     } catch (error) {
-        cardContainer.innerHTML = "<p>Failed to load destinations.</p>";
+        document.querySelector("#destination-cards").innerHTML =
+            "<p>Failed to load destinations.</p>";
+        console.error(error);
     }
-};
 
-initialize();
+    // Setup subscribe form after DOM is ready
+    setupSubscribeForm();
+}
+
+init();
