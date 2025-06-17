@@ -216,6 +216,17 @@ footer a:focus {
         display: none;
         background-color: #0077b6;
         padding: 1rem 0;
+        position: absolute;
+        /* position it absolutely */
+        top: 60px;
+        /* below the header */
+        right: 1rem;
+        width: 200px;
+        /* fixed width */
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        z-index: 9999;
+        /* make sure it's above other content */
     }
 
     .nav-links.show {
@@ -224,7 +235,18 @@ footer a:focus {
 
     #menu-toggle {
         display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        z-index: 10000;
+        /* above nav-links */
     }
+}
 
     .footer-container {
         flex-direction: column;
