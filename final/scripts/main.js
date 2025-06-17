@@ -33,9 +33,17 @@ async function init() {
     if (menuToggle && navLinks) {
         menuToggle.addEventListener("click", () => {
             console.log("Clicked menu");
-            navLinks.classList.toggle("show");
+            navLinks.classList.toggle("open");
+
+            // Toggle aria-expanded for accessibility
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            menuToggle.setAttribute('aria-expanded', !expanded);
+
+            // Toggle a class on the button for styling (e.g., active)
+            menuToggle.classList.toggle('active');
         });
     }
 }
 
-init();
+// Call init() after the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', init);
