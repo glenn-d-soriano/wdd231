@@ -259,3 +259,11 @@ nav h1 {
     font-size: 2rem;
     /* Match your intended h1 size */
 }
+
+.form-message {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #e63946;
+    /* Default to red for errors, overridden by JS on success */
+}
