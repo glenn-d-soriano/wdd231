@@ -64,17 +64,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 .hero-text p {
     font-size: 1rem;
     font-weight: 300;
 }
+
 section h2,
 h2 {
     color: #020202;
     font-family: 'Roboto', sans-serif;
     margin: 2rem 0 1rem;
 }
+
 /* Header + Nav */
 header {
     background-color: #0077b6;
@@ -101,6 +102,7 @@ nav h1 {
     margin-bottom: 1rem;
     /* Match your intended h1 size */
 }
+
 nav {
     margin-top: 0.5rem;
 }
@@ -111,6 +113,8 @@ nav {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+    flex-direction: row;
+    /* horizontal on desktop */
 }
 
 .nav-links a {
@@ -162,31 +166,73 @@ nav {
     background-color: #e76f51;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     background-color: #0077b6;
     color: white;
-    text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 1100px;
     margin: auto;
     gap: 2rem;
 }
 
 footer section {
-    flex: 1;
+    flex-basis: 33.33%;
     min-width: 220px;
 }
 
+/* Left section text left aligned */
+.footer-container>section:first-child {
+    text-align: left;
+}
+
+/* Center social links */
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Social link anchors */
+.sociallinks a {
+    margin: 0 0.5rem;
+}
+
+/* Social link icons */
+.sociallinks img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Right aligned designer info */
+.designer {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-align: right;
+}
+
+/* Contact info styling */
+.contact {
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: right;
+}
+
+/* Footer links */
 footer a {
-    color: #000000;
+    color: #ffcc00;
     text-decoration: none;
 }
 
@@ -195,38 +241,82 @@ footer a:focus {
     text-decoration: underline;
 }
 
-.sociallinks {
-    text-align: center;
+/* FOOTER MOBILE */
+@media (max-width: 600px) {
+    footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    footer section {
+        flex-basis: auto;
+        min-width: auto;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .designer,
+    .sociallinks,
+    .contact,
+    .footer-container>section:first-child {
+        text-align: center !important;
+        flex-basis: auto;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 
-.sociallinks a {
-    margin: 0 0.5rem;
+/* Other */
+.site-title {
+    display: block !important;
+    color: #000 !important;
+    font-size: 2rem !important;
+    z-index: 999 !important;
+    position: relative !important;
 }
 
-.sociallinks img {
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
+.form-message {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #e63946;
+    /* Default to red for errors, overridden by JS on success */
 }
 
-/* Mobile Nav + Footer */
+/* NAVIGATION */
+
+/* Desktop nav - horizontal and visible */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Mobile nav */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
         display: none;
+        /* hidden initially */
         background-color: #0077b6;
         padding: 1rem 0;
         position: absolute;
-        /* position it absolutely */
         top: 60px;
-        /* below the header */
+        /* below header */
         right: 1rem;
         width: 200px;
-        /* fixed width */
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
         z-index: 9999;
-        /* make sure it's above other content */
     }
 
     .nav-links.open {
@@ -244,49 +334,5 @@ footer a:focus {
         border: none;
         color: white;
         z-index: 10000;
-        /* above nav-links */
     }
-}
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer section {
-        margin-bottom: 1rem;
-    }
-
-
-.site-title {
-    display: block !important;
-    color: #000 !important;
-    font-size: 2rem !important;
-    z-index: 999 !important;
-    position: relative !important;
-}
-
-.contact {
-    /* styling for contact info in footer */
-    font-size: 0.9rem;
-    color: #ffffff;
-    padding: 1rem 0;
-}
-
-.designer {
-    /* styling for the footer site info */
-    font-style: italic;
-    font-size: 0.8rem;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 1.5rem;
-}
-
-
-.form-message {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #e63946;
-    /* Default to red for errors, overridden by JS on success */
 }
