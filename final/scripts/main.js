@@ -1,4 +1,4 @@
-import { fetchDestinations } from "./fetchDestinations.js";
+import { fetchDestinations } from "./fetchdestinations.js";
 import { displayDestinations } from "./ui.js";
 import { setupSubscribeForm } from "./subscribe.js";
 
