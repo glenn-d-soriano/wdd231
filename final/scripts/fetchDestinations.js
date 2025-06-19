@@ -5,7 +5,6 @@ export const fetchDestinations = async () => {
         const destinations = await response.json();
         return destinations;
     } catch (error) {
-        console.error("Error loading destination data:", error);
         throw error;
     }
 };

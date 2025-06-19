@@ -1,12 +1,12 @@
 export function setupSubscribeForm() {
-    console.log("Setting up subscribe form...");
+    
 
     const form = document.querySelector("#newsletter-form");
     const message = document.querySelector("#newsletter-message");
     const counter = document.querySelector("#reviewCount");
 
     if (!form || !message) {
-        console.warn("Form or message element not found.");
+        
         return;
     }
 

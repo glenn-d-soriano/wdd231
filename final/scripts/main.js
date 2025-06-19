@@ -32,7 +32,6 @@ async function init() {
     const navLinks = document.querySelector(".nav-links");
     if (menuToggle && navLinks) {
         menuToggle.addEventListener("click", () => {
-            console.log("Clicked menu");
             navLinks.classList.toggle("open");
 
             // Toggle aria-expanded for accessibility
